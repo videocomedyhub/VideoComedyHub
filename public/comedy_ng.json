@@ -1,0 +1,1362 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/eLDwpNHFoh7R76AW9-ww2TNa3z4\"",
+    "nextPageToken": "CDIQAA",
+    "regionCode": "NG",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 50
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/ld1yR3GmkBGAbgYVhEkUhNw6ZNo\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCvO4Ym5LjYTo0uZRfUvtc-w"
+            },
+            "snippet": {
+                "publishedAt": "2009-12-23T23:19:15.000Z",
+                "channelId": "UCvO4Ym5LjYTo0uZRfUvtc-w",
+                "title": "AY Comedian",
+                "description": "This platform is where you can find the best of rib cracking comedy that will keep you smiling and laughing till you forget your name, remember laughter keeps you young, healthy and kicking....",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-2v1ZO_zHcjM/AAAAAAAAAAI/AAAAAAAAAAA/RBcaFPWqYaE/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-2v1ZO_zHcjM/AAAAAAAAAAI/AAAAAAAAAAA/RBcaFPWqYaE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-2v1ZO_zHcjM/AAAAAAAAAAI/AAAAAAAAAAA/RBcaFPWqYaE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "AY Comedian",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/BqMHjPEvcSvO1iFlCY30vcdKACI\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCsIEFXNO4bxh0hW3-_z2-0g"
+            },
+            "snippet": {
+                "publishedAt": "2016-04-29T15:22:28.000Z",
+                "channelId": "UCsIEFXNO4bxh0hW3-_z2-0g",
+                "title": "Comedy Club",
+                "description": "Добро пожаловать на официальный YouTube канал Comedy Club (Камеди Клаб)! Смотрите самые популярные номера из золото...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-4UEtimvuk7c/AAAAAAAAAAI/AAAAAAAAAAA/7fenHYkOG1g/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-4UEtimvuk7c/AAAAAAAAAAI/AAAAAAAAAAA/7fenHYkOG1g/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-4UEtimvuk7c/AAAAAAAAAAI/AAAAAAAAAAA/7fenHYkOG1g/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Club",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/YaJQWMlP_WTm7ZMdgIXTuEc8B6o\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCIBYBeU6-i5ZaKRIOd7j1_Q"
+            },
+            "snippet": {
+                "publishedAt": "2015-05-16T17:24:10.000Z",
+                "channelId": "UCIBYBeU6-i5ZaKRIOd7j1_Q",
+                "title": "Real House Of Comedy",
+                "description": "Real House Of Comedy is all about entertainment, making you laugh and also educative.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-UZP0asoB8A0/AAAAAAAAAAI/AAAAAAAAAAA/fzbz9JSm2xw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-UZP0asoB8A0/AAAAAAAAAAI/AAAAAAAAAAA/fzbz9JSm2xw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-UZP0asoB8A0/AAAAAAAAAAI/AAAAAAAAAAA/fzbz9JSm2xw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Real House Of Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/yjoVAlnLIpLzK7dMCtIZYTIDc2E\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UChbP0uybEksMHE1q3KhbrEA"
+            },
+            "snippet": {
+                "publishedAt": "2016-04-02T18:09:12.000Z",
+                "channelId": "UChbP0uybEksMHE1q3KhbrEA",
+                "title": "Naija Comedy Hub",
+                "description": "Nigeria and Africa's Hottest Comedy Channel. Best of Naija Comedy. Subscribe for more awesome comedic content!!! One Love! Comedy from Basketmouth, Akpororo, Bovi, Seyi Law, Gordons, I Go...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-P1PJATbCahI/AAAAAAAAAAI/AAAAAAAAAAA/3agi0EjduBc/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-P1PJATbCahI/AAAAAAAAAAI/AAAAAAAAAAA/3agi0EjduBc/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-P1PJATbCahI/AAAAAAAAAAI/AAAAAAAAAAA/3agi0EjduBc/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Naija Comedy Hub",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/q_sDFxH7_B01GXVEKUtMirgSFe8\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCMh4bJTqii1zwBDTKprV-aw"
+            },
+            "snippet": {
+                "publishedAt": "2017-09-19T04:21:45.000Z",
+                "channelId": "UCMh4bJTqii1zwBDTKprV-aw",
+                "title": "Dolan Comedy",
+                "description": "Hi sisters!!!! My name is Jaequalyn and I make....\"creative\" videos. -i'm in one of these videos. cAN YoU FiNd mE? - - I post every Friday...cuz editing is hard. - Follow me on Instagram...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-PvQ-fkWh_rg/AAAAAAAAAAI/AAAAAAAAAAA/NhdyIWcrdYU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-PvQ-fkWh_rg/AAAAAAAAAAI/AAAAAAAAAAA/NhdyIWcrdYU/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-PvQ-fkWh_rg/AAAAAAAAAAI/AAAAAAAAAAA/NhdyIWcrdYU/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Dolan Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/8YLrcvuOxDoSxWRe1apYSOJcjcA\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCQmZ9BIYOBSkxL-eqqg5z-g"
+            },
+            "snippet": {
+                "publishedAt": "2013-06-29T19:18:52.000Z",
+                "channelId": "UCQmZ9BIYOBSkxL-eqqg5z-g",
+                "title": "MarkAngelComedy",
+                "description": "Mark Angel Comedy is a platform where people can watch funny videos. We bring you a new video every Friday. Please Subscribe to Mark Angel Comedy Official YouTube Channel: http://goo.gl/gnzgW3...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-gIkBxlOOurc/AAAAAAAAAAI/AAAAAAAAAAA/PT3sNjN8RNs/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-gIkBxlOOurc/AAAAAAAAAAI/AAAAAAAAAAA/PT3sNjN8RNs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-gIkBxlOOurc/AAAAAAAAAAI/AAAAAAAAAAA/PT3sNjN8RNs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "MarkAngelComedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/74FxbrvtP5dZ3MXykOw8naEj8Xc\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCAjpCewc6DQQSvVIoMh1h3w"
+            },
+            "snippet": {
+                "publishedAt": "2014-09-26T12:54:27.000Z",
+                "channelId": "UCAjpCewc6DQQSvVIoMh1h3w",
+                "title": "ZIZU COMEDY UGANDA",
+                "description": "Zzizinga Dickson A.K.A ZIZU is a talented comedian from Uganda. He is a creative director, writer and producer with Fun Factory comedy group and also a TV host of MINIBUZZ on Bukedde TV. \"ZIZU\"...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-fm-6tkPMtqg/AAAAAAAAAAI/AAAAAAAAAAA/0InVEnd1sj0/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-fm-6tkPMtqg/AAAAAAAAAAI/AAAAAAAAAAA/0InVEnd1sj0/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-fm-6tkPMtqg/AAAAAAAAAAI/AAAAAAAAAAA/0InVEnd1sj0/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "ZIZU COMEDY UGANDA",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/IyZU5uplCiJJg6JHT6TGTYa90xc\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCWvxeZpuxPYqVBulWG3YmTQ"
+            },
+            "snippet": {
+                "publishedAt": "2015-08-29T12:12:01.000Z",
+                "channelId": "UCWvxeZpuxPYqVBulWG3YmTQ",
+                "title": "Praiz victor comedy",
+                "description": "Watch comedy cool comedy skitz here @praize victor comedy skitz a.k.a house of comedy . For booking & sponsorship call +2348132849216.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-i5ffk1384dY/AAAAAAAAAAI/AAAAAAAAAAA/UeT32Ko-hJU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-i5ffk1384dY/AAAAAAAAAAI/AAAAAAAAAAA/UeT32Ko-hJU/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-i5ffk1384dY/AAAAAAAAAAI/AAAAAAAAAAA/UeT32Ko-hJU/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Praiz victor comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/-E83rX6hRz-upQmQswFRqt-eGew\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC8uHONxmt8L_o2XF5xpvVAQ"
+            },
+            "snippet": {
+                "publishedAt": "2015-02-12T13:17:26.000Z",
+                "channelId": "UC8uHONxmt8L_o2XF5xpvVAQ",
+                "title": "F U N N Y - latest comedy",
+                "description": "Get all latest comedy videos, clips and skits right her on this comedy channel, relieve yourself of the stress of life and have fun on this comedy channel. Check out your favorite comedians...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-CHQsrD5_g90/AAAAAAAAAAI/AAAAAAAAAAA/pDvw8JdaOrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-CHQsrD5_g90/AAAAAAAAAAI/AAAAAAAAAAA/pDvw8JdaOrA/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-CHQsrD5_g90/AAAAAAAAAAI/AAAAAAAAAAA/pDvw8JdaOrA/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "F U N N Y - latest comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/p05vz1ccbxXS0WNIqm24y-5WuvI\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCSgZkoV1VqYpYYD7GflXDng"
+            },
+            "snippet": {
+                "publishedAt": "2013-02-14T00:27:11.000Z",
+                "channelId": "UCSgZkoV1VqYpYYD7GflXDng",
+                "title": "Jnel Comedy",
+                "description": "young jamaican comedians who entertains in acting short comedy skits for every one.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-qch5Bn1PwkY/AAAAAAAAAAI/AAAAAAAAAAA/r3iXDh1R9j4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-qch5Bn1PwkY/AAAAAAAAAAI/AAAAAAAAAAA/r3iXDh1R9j4/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-qch5Bn1PwkY/AAAAAAAAAAI/AAAAAAAAAAA/r3iXDh1R9j4/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Jnel Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/0BYmWYYS_Tz1WqWlORK26De1gl8\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC9fTi9wTYOtJZ6L8s07-bSQ"
+            },
+            "snippet": {
+                "publishedAt": "2011-08-19T13:49:23.000Z",
+                "channelId": "UC9fTi9wTYOtJZ6L8s07-bSQ",
+                "title": "Alex Muhangi Comedian",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-nw2PO7ofciw/AAAAAAAAAAI/AAAAAAAAAAA/rdSX_1thgTI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-nw2PO7ofciw/AAAAAAAAAAI/AAAAAAAAAAA/rdSX_1thgTI/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-nw2PO7ofciw/AAAAAAAAAAI/AAAAAAAAAAA/rdSX_1thgTI/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Alex Muhangi Comedian",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/bWv0DG1qWp6sHJPSrI9qxor7S3Y\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCGZjUSaIV_LZyFZ2TqY80aA"
+            },
+            "snippet": {
+                "publishedAt": "2014-03-24T20:34:27.000Z",
+                "channelId": "UCGZjUSaIV_LZyFZ2TqY80aA",
+                "title": "Comedy Files",
+                "description": "Based in Uganda, East Africa Comedy Files presents CLEAN Standup Comedy and all the latest files in the Comedy Industry.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-vBmYOT0mRSA/AAAAAAAAAAI/AAAAAAAAAAA/-OHiu_Qpy-M/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-vBmYOT0mRSA/AAAAAAAAAAI/AAAAAAAAAAA/-OHiu_Qpy-M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-vBmYOT0mRSA/AAAAAAAAAAI/AAAAAAAAAAA/-OHiu_Qpy-M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Files",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/7CwPc4J3msnyUW-VNBDgjGRvXr4\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCiTB3QYIaLXhq5UTd_c8EpA"
+            },
+            "snippet": {
+                "publishedAt": "2014-07-06T23:22:02.000Z",
+                "channelId": "UCiTB3QYIaLXhq5UTd_c8EpA",
+                "title": "COLESON COMEDY",
+                "description": "For \"PRODUCT PROMOTIONS / BUSINESS INQUIRES\" Please see business email Welcome to my channel here you will find - Funny Reaction videos! Funny Roblox / Roblox Videos / Roblox Obbys / Funny...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-eI_YQBnXsoU/AAAAAAAAAAI/AAAAAAAAAAA/jSje7_ODmRs/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-eI_YQBnXsoU/AAAAAAAAAAI/AAAAAAAAAAA/jSje7_ODmRs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-eI_YQBnXsoU/AAAAAAAAAAI/AAAAAAAAAAA/jSje7_ODmRs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "COLESON COMEDY",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/nK7G6Kx5GArJGNkqLMjCoXtx8GE\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCwWhs_6x42TyRM4Wstoq8HA"
+            },
+            "snippet": {
+                "publishedAt": "2016-05-26T18:41:28.000Z",
+                "channelId": "UCwWhs_6x42TyRM4Wstoq8HA",
+                "title": "The Daily Show with Trevor Noah",
+                "description": "The Daily Show is an Emmy and Peabody Award-winning program that looks at the day's top headlines through a sharp, reality-based lens. Along with the help of The Best F#@king News Team Ever,...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-lYZk4150pXc/AAAAAAAAAAI/AAAAAAAAAAA/CR6MoHGaJiY/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-lYZk4150pXc/AAAAAAAAAAI/AAAAAAAAAAA/CR6MoHGaJiY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-lYZk4150pXc/AAAAAAAAAAI/AAAAAAAAAAA/CR6MoHGaJiY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "The Daily Show with Trevor Noah",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/PK7U1f_9HV0dI5za7plOV1ExuAk\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCUsN5ZwHx2kILm84-jPDeXw"
+            },
+            "snippet": {
+                "publishedAt": "2006-06-14T11:18:40.000Z",
+                "channelId": "UCUsN5ZwHx2kILm84-jPDeXw",
+                "title": "Comedy Central",
+                "description": "Comedy Central brings you the funniest stuff on the planet. Watch hit shows like Workaholics, Tosh.0, The Daily Show with Trevor Noah, Inside Amy Schumer, Key & Peele, @midnight and Broad City,...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-ios1OK1LQyc/AAAAAAAAAAI/AAAAAAAAAAA/1lJALaYer2c/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-ios1OK1LQyc/AAAAAAAAAAI/AAAAAAAAAAA/1lJALaYer2c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-ios1OK1LQyc/AAAAAAAAAAI/AAAAAAAAAAA/1lJALaYer2c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Central",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/VbqWxCbQDrSAuo9xV1bLImvq7Ns\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC5b4n1aJXZ_amG1Z8l4G6kQ"
+            },
+            "snippet": {
+                "publishedAt": "2016-03-18T17:01:45.000Z",
+                "channelId": "UC5b4n1aJXZ_amG1Z8l4G6kQ",
+                "title": "The Comedy نجم الكوميديا",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-Nf5gXrKnwLc/AAAAAAAAAAI/AAAAAAAAAAA/65SJKpm5VIY/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-Nf5gXrKnwLc/AAAAAAAAAAI/AAAAAAAAAAA/65SJKpm5VIY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-Nf5gXrKnwLc/AAAAAAAAAAI/AAAAAAAAAAA/65SJKpm5VIY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "The Comedy نجم الكوميديا",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/JDsStmncTYP77follBchKvxaD7U\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC4KeemgeqYG2Mo3ODwIRacQ"
+            },
+            "snippet": {
+                "publishedAt": "2011-10-27T02:14:28.000Z",
+                "channelId": "UC4KeemgeqYG2Mo3ODwIRacQ",
+                "title": "The Wall of Comedy",
+                "description": "The Wall Of Comedy is a Brand New home of UK comedy and Entertainment, founded by Mandem On The Wall . Subscribe for the funniest videos from your favourite Comedians and Comic Talent! Official...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-z2TXlTcs-IQ/AAAAAAAAAAI/AAAAAAAAAAA/jN9W0C97Mww/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-z2TXlTcs-IQ/AAAAAAAAAAI/AAAAAAAAAAA/jN9W0C97Mww/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-z2TXlTcs-IQ/AAAAAAAAAAI/AAAAAAAAAAA/jN9W0C97Mww/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "The Wall of Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/K2zshyqAWed3aaSPb81ChWrKMaU\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCQZ43c4dAA9eXCQuXWu9aTw"
+            },
+            "snippet": {
+                "publishedAt": "2013-12-13T21:19:09.000Z",
+                "channelId": "UCQZ43c4dAA9eXCQuXWu9aTw",
+                "title": "Comedy - Topic",
+                "description": "A comedy is entertainment consisting of jokes intended to make an audience laugh. For ancient Greeks and Romans a comedy was a stage-play with a happy ending. In the Middle Ages, the term expanded...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-uskyrlYmCUg/AAAAAAAAAAI/AAAAAAAAAAA/XW-BrTUHw2M/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-uskyrlYmCUg/AAAAAAAAAAI/AAAAAAAAAAA/XW-BrTUHw2M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-uskyrlYmCUg/AAAAAAAAAAI/AAAAAAAAAAA/XW-BrTUHw2M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy - Topic",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/DlEvcC_gxYbujU7pOQkc1_6IBLs\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCJ84pNq5D5h5DgALCou5WEg"
+            },
+            "snippet": {
+                "publishedAt": "2016-05-06T22:20:58.000Z",
+                "channelId": "UCJ84pNq5D5h5DgALCou5WEg",
+                "title": "British Comedy",
+                "description": "100% British comedy The Ricky Gervais Show The Brittas Empire Open All Hours Hale & Pace The Detectives Stand-up The 11oclock Show.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-W16ue7tZ7Fc/AAAAAAAAAAI/AAAAAAAAAAA/nDVcdgmb35U/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-W16ue7tZ7Fc/AAAAAAAAAAI/AAAAAAAAAAA/nDVcdgmb35U/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-W16ue7tZ7Fc/AAAAAAAAAAI/AAAAAAAAAAA/nDVcdgmb35U/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "British Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/-LhztJVyLJbUAsvCi6wk3IzdO0M\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCDbM8yVukVKPWUQSODaw_Mw"
+            },
+            "snippet": {
+                "publishedAt": "2013-12-23T09:58:53.000Z",
+                "channelId": "UCDbM8yVukVKPWUQSODaw_Mw",
+                "title": "Comedy Movies - Topic",
+                "description": "Comedy is a genre of film in which the main emphasis is on humour. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-sX6l5JnKs5o/AAAAAAAAAAI/AAAAAAAAAAA/H8naNZypbu8/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-sX6l5JnKs5o/AAAAAAAAAAI/AAAAAAAAAAA/H8naNZypbu8/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-sX6l5JnKs5o/AAAAAAAAAAI/AAAAAAAAAAA/H8naNZypbu8/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Movies - Topic",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/w3U7PFtEx59AyO5GJAkwY_IIkwY\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCItDVkw1GqG6-L3JujfQchA"
+            },
+            "snippet": {
+                "publishedAt": "2013-06-28T13:15:40.000Z",
+                "channelId": "UCItDVkw1GqG6-L3JujfQchA",
+                "title": "Banana Comedy",
+                "description": "Banana Comedy là kênh giải trí hàng đầu Việt Nam. Kênh là sự tập hợp các video hài đặc sắc nhất của các cây hài gạo cội trong nước cũng như hải ngoại...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-OK6yeprd_RA/AAAAAAAAAAI/AAAAAAAAAAA/6IBZ9UPWFiM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-OK6yeprd_RA/AAAAAAAAAAI/AAAAAAAAAAA/6IBZ9UPWFiM/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-OK6yeprd_RA/AAAAAAAAAAI/AAAAAAAAAAA/6IBZ9UPWFiM/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Banana Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/6155ijIdrDOjL0ywTabJ9dCl0V0\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCZOnKo2JsXRX5AGVLa9Jd9w"
+            },
+            "snippet": {
+                "publishedAt": "2015-06-30T23:29:55.000Z",
+                "channelId": "UCZOnKo2JsXRX5AGVLa9Jd9w",
+                "title": "Nam Việt Comedy",
+                "description": "Hài Việt Tuyển Chọn chia sẽ những video, clip hài đặc sắc và hay nhất của Hoài Linh, Chí Tài, Long Đẹp Trai, Trường Giang, Nhật Cường ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-DU7fpYXPCyQ/AAAAAAAAAAI/AAAAAAAAAAA/VDcXjOfmOFw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-DU7fpYXPCyQ/AAAAAAAAAAI/AAAAAAAAAAA/VDcXjOfmOFw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-DU7fpYXPCyQ/AAAAAAAAAAI/AAAAAAAAAAA/VDcXjOfmOFw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Nam Việt Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/njEgwAxVRfgYSp0B6NJqZrD7Lss\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCg02sGjSTtGdLus9nGOOJUg"
+            },
+            "snippet": {
+                "publishedAt": "2007-12-14T16:40:29.000Z",
+                "channelId": "UCg02sGjSTtGdLus9nGOOJUg",
+                "title": "Jeff Allen Comedy",
+                "description": "Christian comedian Jeff Allen is the best at what he does making people laugh as hard as humanly possible. His Happy Wife, Happy Life message of a marriage gone wrong and redeemed has given...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-RoUtXK79_IE/AAAAAAAAAAI/AAAAAAAAAAA/xRCA13SO8Lc/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-RoUtXK79_IE/AAAAAAAAAAI/AAAAAAAAAAA/xRCA13SO8Lc/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-RoUtXK79_IE/AAAAAAAAAAI/AAAAAAAAAAA/xRCA13SO8Lc/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Jeff Allen Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/EUZ7TLNmWnNadWAGYYsL-U2xK-I\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCmAPdImtXLGh5E-lTTH4Qmg"
+            },
+            "snippet": {
+                "publishedAt": "2015-08-19T12:06:05.000Z",
+                "channelId": "UCmAPdImtXLGh5E-lTTH4Qmg",
+                "title": "Flowers Comedy",
+                "description": "The full HD episode of Comedy Super Nite. Watch Comedy Super Nite Monday to Thursday, 9.30PM Only on Flowers with Suraj Venjaramoodu and Aswathy. Guest : Subscribe to Flowers channel for...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-xY7K3i6n7Qg/AAAAAAAAAAI/AAAAAAAAAAA/jYBrx4mzP9M/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-xY7K3i6n7Qg/AAAAAAAAAAI/AAAAAAAAAAA/jYBrx4mzP9M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-xY7K3i6n7Qg/AAAAAAAAAAI/AAAAAAAAAAA/jYBrx4mzP9M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Flowers Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/bjOJCVK8CdL_-Vp7XDGgjm3M2Wk\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCFo0yvjeG7ipfaKcuTr-QMA"
+            },
+            "snippet": {
+                "publishedAt": "2005-10-24T02:15:39.000Z",
+                "channelId": "UCFo0yvjeG7ipfaKcuTr-QMA",
+                "title": "Official Gaming Comedy",
+                "description": "Your #1 Source for Funny Gaming Videos across the Community! We provide you with entertaining daily content that gives you the chance to explore new videos and find new channels. If you are...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-5v0SYWgDaVU/AAAAAAAAAAI/AAAAAAAAAAA/83JZChn4Sqc/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-5v0SYWgDaVU/AAAAAAAAAAI/AAAAAAAAAAA/83JZChn4Sqc/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-5v0SYWgDaVU/AAAAAAAAAAI/AAAAAAAAAAA/83JZChn4Sqc/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Official Gaming Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/AnWmkxh4qIWWl2NfYm3JsJRIPSI\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCD5utCd3QeaosRbVO7g8kkg"
+            },
+            "snippet": {
+                "publishedAt": "2015-03-23T08:18:32.000Z",
+                "channelId": "UCD5utCd3QeaosRbVO7g8kkg",
+                "title": "Comedy Konkout",
+                "description": "When punches are not literal. And jabs are thrown in the form of puns. We bring to you 'Comedy Konkout' The Comedy heavyweights of the internet come together for the Ultimate Comedy Showdown!...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-arIlxDF1gW8/AAAAAAAAAAI/AAAAAAAAAAA/BmVsg66LSzs/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-arIlxDF1gW8/AAAAAAAAAAI/AAAAAAAAAAA/BmVsg66LSzs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-arIlxDF1gW8/AAAAAAAAAAI/AAAAAAAAAAA/BmVsg66LSzs/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Konkout",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/M8nK7O9NOxdUXsQKbusXczY0GQc\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC5tbba_wse9gJtCrJhquXOQ"
+            },
+            "snippet": {
+                "publishedAt": "2016-04-29T15:23:27.000Z",
+                "channelId": "UC5tbba_wse9gJtCrJhquXOQ",
+                "title": "Comedy Woman",
+                "description": "Добро пожаловать на официальный YouTube канал лучшего в мире шоу Comedy Woman(Камеди Вуман)! А лучшее оно потому что...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-_iCgrX2XbGs/AAAAAAAAAAI/AAAAAAAAAAA/zepDU4G8ewQ/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-_iCgrX2XbGs/AAAAAAAAAAI/AAAAAAAAAAA/zepDU4G8ewQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-_iCgrX2XbGs/AAAAAAAAAAI/AAAAAAAAAAA/zepDU4G8ewQ/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Woman",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/R_skEktIDrunQxee-BNnvkR0rKw\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCt8OnQ7ztuLrPrehlj8ZuuQ"
+            },
+            "snippet": {
+                "publishedAt": "2011-01-29T05:32:53.000Z",
+                "channelId": "UCt8OnQ7ztuLrPrehlj8ZuuQ",
+                "title": "DavidSoComedy",
+                "description": "NEW VIDEOS THURSDAY- SUNDAY!!! COME CHECK IT OUT!",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-4LZgPTWusMI/AAAAAAAAAAI/AAAAAAAAAAA/u3qcuWAQOug/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-4LZgPTWusMI/AAAAAAAAAAI/AAAAAAAAAAA/u3qcuWAQOug/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-4LZgPTWusMI/AAAAAAAAAAI/AAAAAAAAAAA/u3qcuWAQOug/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "DavidSoComedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/8Jfk3pe8QlwNNltKcSNUrENFnU4\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCmZ5j3XJEr0ZfZRboW7FPVw"
+            },
+            "snippet": {
+                "publishedAt": "2014-12-11T12:52:13.000Z",
+                "channelId": "UCmZ5j3XJEr0ZfZRboW7FPVw",
+                "title": "Comedy Culture",
+                "description": "Comedy Culture - Malayalam MashUp Remix Channel We make trolls. We mash up videos & songs to make our trolls. We are not here to watch other videos. We are here to make you laugh, we are...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-GK4tSUYwoZY/AAAAAAAAAAI/AAAAAAAAAAA/htMx96Gz0FY/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-GK4tSUYwoZY/AAAAAAAAAAI/AAAAAAAAAAA/htMx96Gz0FY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-GK4tSUYwoZY/AAAAAAAAAAI/AAAAAAAAAAA/htMx96Gz0FY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Culture",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/O0i9ubVCvQPjqLOalDvDCAS2tCs\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCNvom0TLEORYmo9B3XRlpcA"
+            },
+            "snippet": {
+                "publishedAt": "2016-11-09T17:38:02.000Z",
+                "channelId": "UCNvom0TLEORYmo9B3XRlpcA",
+                "title": "Comedy Club",
+                "description": "Comedy Club - první pořad z vlastní produkce komediálního kanálu Prima Comedy Central Comedy Club sází na originální humor, každodenní příběhy a přímou komunikaci s publikem....",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-T6tMg96ITpU/AAAAAAAAAAI/AAAAAAAAAAA/5Z0sAxLxLD4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-T6tMg96ITpU/AAAAAAAAAAI/AAAAAAAAAAA/5Z0sAxLxLD4/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-T6tMg96ITpU/AAAAAAAAAAI/AAAAAAAAAAA/5Z0sAxLxLD4/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Club",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/E1bzFnzHJNBYoJ5AYaTOGd6FyXo\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC6xOVUMstTf08rUgOFbyPEA"
+            },
+            "snippet": {
+                "publishedAt": "2011-06-28T18:51:01.000Z",
+                "channelId": "UC6xOVUMstTf08rUgOFbyPEA",
+                "title": "SnG Comedy",
+                "description": "SnG Comedy are a group of professional stand up, improv and sketch comedians from Mumbai, India. SnG comprises of Karan Talwar, Varun Thakur, Aadar Malik, Brij Bhakta, Neville Shah and Kautuk...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-GlVR4xnVsRk/AAAAAAAAAAI/AAAAAAAAAAA/MH1vEneEAHg/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-GlVR4xnVsRk/AAAAAAAAAAI/AAAAAAAAAAA/MH1vEneEAHg/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-GlVR4xnVsRk/AAAAAAAAAAI/AAAAAAAAAAA/MH1vEneEAHg/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "SnG Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/GpIdFyIm-gIhTQ6vqmXRMPyi-FU\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCnoqvTW4YZExfDeq7_Wmd-w"
+            },
+            "snippet": {
+                "publishedAt": "2015-07-14T10:47:48.000Z",
+                "channelId": "UCnoqvTW4YZExfDeq7_Wmd-w",
+                "title": "ETV Jabardasth",
+                "description": "The \"Jabardasth\" Katharnak Comedy Show is a popular Telugu TV comedy show, rated \"excellent\" among Telugu, broadcast on ETV channel, in Telugu States, India. The show was first telecast on...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-T4l2bnzblHM/AAAAAAAAAAI/AAAAAAAAAAA/fLR9llrz-P4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-T4l2bnzblHM/AAAAAAAAAAI/AAAAAAAAAAA/fLR9llrz-P4/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-T4l2bnzblHM/AAAAAAAAAAI/AAAAAAAAAAA/fLR9llrz-P4/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "ETV Jabardasth",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/5qBRuNpXY4PnOmbQ31C4MAiWLbI\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC76Yc75RGWonijH02CIhPaw"
+            },
+            "snippet": {
+                "publishedAt": "2016-08-29T06:56:28.000Z",
+                "channelId": "UC76Yc75RGWonijH02CIhPaw",
+                "title": "Great Indian Comedy",
+                "description": "Great Indian Comedy” is an initiative by Goldmines Telefilms to bring together high quality Comedy content. The Channel offers a comical line up of hilarious videos from Bollywood & Tollywood...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-0rMjvfOlmDc/AAAAAAAAAAI/AAAAAAAAAAA/jsg1akdVOuk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-0rMjvfOlmDc/AAAAAAAAAAI/AAAAAAAAAAA/jsg1akdVOuk/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-0rMjvfOlmDc/AAAAAAAAAAI/AAAAAAAAAAA/jsg1akdVOuk/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Great Indian Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/GV9Q-MrdL3JHtr_i_ezgdBxRWDk\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCOM9L6nGoTNFpWZb7KbbeFw"
+            },
+            "snippet": {
+                "publishedAt": "2013-11-01T08:39:10.000Z",
+                "channelId": "UCOM9L6nGoTNFpWZb7KbbeFw",
+                "title": "TFC Comedy",
+                "description": "Welcome to TFC Comedy !! Enjoy Watching the best of our Latest and blockbuster hits only in our official YouTube page. From Various Genres Like Telugu latest comedy video, funny movie scenes...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-09b7DYpGMb4/AAAAAAAAAAI/AAAAAAAAAAA/bn8N0WWYdHM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-09b7DYpGMb4/AAAAAAAAAAI/AAAAAAAAAAA/bn8N0WWYdHM/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-09b7DYpGMb4/AAAAAAAAAAI/AAAAAAAAAAA/bn8N0WWYdHM/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "TFC Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/XTsYmtvTMnXKpxM-U61xH66f-pU\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCjAnzOSTSWmweA1xLAg0flw"
+            },
+            "snippet": {
+                "publishedAt": "2012-11-22T15:39:33.000Z",
+                "channelId": "UCjAnzOSTSWmweA1xLAg0flw",
+                "title": "RTÉ Republic of Comedy",
+                "description": "Welcome to the official home of Irish comedy on RTÉ One and RTÉ Two. Updated weekly and fierce funny altogether!",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-o3aTp9LE6lg/AAAAAAAAAAI/AAAAAAAAAAA/7KlKB5hIcGo/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-o3aTp9LE6lg/AAAAAAAAAAI/AAAAAAAAAAA/7KlKB5hIcGo/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-o3aTp9LE6lg/AAAAAAAAAAI/AAAAAAAAAAA/7KlKB5hIcGo/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "RTÉ Republic of Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/p1wxX8k6w18Jv557mDJHaFp4iUc\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCeUhbBuYvwHXo6lHsoeZxwg"
+            },
+            "snippet": {
+                "publishedAt": "2016-11-30T05:37:26.000Z",
+                "channelId": "UCeUhbBuYvwHXo6lHsoeZxwg",
+                "title": "Jatra Comedy",
+                "description": "Watch Movies, TV Shows, Music Albums, Movie Video, Odia Full Jatra & odia comedy.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-8oBPZOAR4uQ/AAAAAAAAAAI/AAAAAAAAAAA/OcK0wSpil-c/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-8oBPZOAR4uQ/AAAAAAAAAAI/AAAAAAAAAAA/OcK0wSpil-c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-8oBPZOAR4uQ/AAAAAAAAAAI/AAAAAAAAAAA/OcK0wSpil-c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Jatra Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/ET10AXKKCgZP2ug0VzLtKe4RG4w\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCDwoCIWJb5pWnBCVb3msmgQ"
+            },
+            "snippet": {
+                "publishedAt": "2016-03-26T08:09:28.000Z",
+                "channelId": "UCDwoCIWJb5pWnBCVb3msmgQ",
+                "title": "New Tamil Comedy",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-okKJMKjamAg/AAAAAAAAAAI/AAAAAAAAAAA/lRMYJ2Fnf_c/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-okKJMKjamAg/AAAAAAAAAAI/AAAAAAAAAAA/lRMYJ2Fnf_c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-okKJMKjamAg/AAAAAAAAAAI/AAAAAAAAAAA/lRMYJ2Fnf_c/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "New Tamil Comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/4iiCp3fdty8ro_c_ffdqRg7OA3Q\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCfELheSlu1wcffbxe3KDQgA"
+            },
+            "snippet": {
+                "publishedAt": "2017-07-10T17:10:51.000Z",
+                "channelId": "UCfELheSlu1wcffbxe3KDQgA",
+                "title": "COMEDY WITH MURARI",
+                "description": "नमस्कार दोस्तों आपको मिलेगा डबल मजा हॉलीवुड बॉलीवुड देशी अंदाज़ में तो जल्...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-lEA9LRWc5Ic/AAAAAAAAAAI/AAAAAAAAAAA/tNuZjX2S2eY/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-lEA9LRWc5Ic/AAAAAAAAAAI/AAAAAAAAAAA/tNuZjX2S2eY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-lEA9LRWc5Ic/AAAAAAAAAAI/AAAAAAAAAAA/tNuZjX2S2eY/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "COMEDY WITH MURARI",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/3EyuQPTdQ9mg3rqh8zaIP_pgdsE\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCvq54BEuT32QfFGIdf49o9A"
+            },
+            "snippet": {
+                "publishedAt": "2014-12-25T01:43:55.000Z",
+                "channelId": "UCvq54BEuT32QfFGIdf49o9A",
+                "title": "Amjad Comedy",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-rKzwfufgz0Y/AAAAAAAAAAI/AAAAAAAAAAA/g3L-R6Rg7DI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-rKzwfufgz0Y/AAAAAAAAAAI/AAAAAAAAAAA/g3L-R6Rg7DI/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-rKzwfufgz0Y/AAAAAAAAAAI/AAAAAAAAAAA/g3L-R6Rg7DI/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Amjad Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/UHbCILR8UIzvJH96f2-MvZzAIQg\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCQIj0pxsN6ooSlYMM_WdqXA"
+            },
+            "snippet": {
+                "publishedAt": "2016-09-19T06:34:20.000Z",
+                "channelId": "UCQIj0pxsN6ooSlYMM_WdqXA",
+                "title": "Comedy Movies Scenes",
+                "description": "Comedy Movie scenes channel brings you the best comedy scenes, Comedy fights,funny fight scenes and comedy dances from South Indian movies,Hindi Movies and Hindi dubbed movies ft. Super stars...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-_xGyu4kYNoM/AAAAAAAAAAI/AAAAAAAAAAA/mu9gekjZBfw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-_xGyu4kYNoM/AAAAAAAAAAI/AAAAAAAAAAA/mu9gekjZBfw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-_xGyu4kYNoM/AAAAAAAAAAI/AAAAAAAAAAA/mu9gekjZBfw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Movies Scenes",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/s9Qp4YlJPTeaReGxhUVkyY4uzfo\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC5voolTHj0M4ZYqMR_xIWHw"
+            },
+            "snippet": {
+                "publishedAt": "2013-02-17T14:15:23.000Z",
+                "channelId": "UC5voolTHj0M4ZYqMR_xIWHw",
+                "title": "A Movie & comedy",
+                "description": "दोस्तों मेरे चैनल में आपका स्वागत है नमस्ते दोस्तों ! हमारे चैनल पर आपका...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-0lArWqrXnLk/AAAAAAAAAAI/AAAAAAAAAAA/RoY2SNGz4iM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-0lArWqrXnLk/AAAAAAAAAAI/AAAAAAAAAAA/RoY2SNGz4iM/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-0lArWqrXnLk/AAAAAAAAAAI/AAAAAAAAAAA/RoY2SNGz4iM/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "A Movie & comedy",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/dh655RMPt9Fi-hYl5HlAQUQh0EI\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCUg9Iv_KnZwTulS0cEi_mJQ"
+            },
+            "snippet": {
+                "publishedAt": "2007-01-30T23:19:08.000Z",
+                "channelId": "UCUg9Iv_KnZwTulS0cEi_mJQ",
+                "title": "Comedy Time",
+                "description": "Stand up comedy videos from top comedians. Funny videos, hilarious jokes and the funniest clips you'll find in one place. Our library encompasses all walks of life from different: lifestyles,...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-DVhvqIKKFlU/AAAAAAAAAAI/AAAAAAAAAAA/EKZb0mBG7yw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-DVhvqIKKFlU/AAAAAAAAAAI/AAAAAAAAAAA/EKZb0mBG7yw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-DVhvqIKKFlU/AAAAAAAAAAI/AAAAAAAAAAA/EKZb0mBG7yw/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Time",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/6Q-69My4sqtGT3ZhBwACCm-2Fp4\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCRVoTH3j2f7ScttHA896few"
+            },
+            "snippet": {
+                "publishedAt": "2016-06-23T01:52:38.000Z",
+                "channelId": "UCRVoTH3j2f7ScttHA896few",
+                "title": "Comedy Aerosol",
+                "description": "Forger & Content Creator Xbox Gamertag: Comedy Aerosol | Twitch: Comedy_Aerosol | Twitter: @Com_Aero.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-E1Hoaw-XCU8/AAAAAAAAAAI/AAAAAAAAAAA/eShsSxEk_UE/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-E1Hoaw-XCU8/AAAAAAAAAAI/AAAAAAAAAAA/eShsSxEk_UE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-E1Hoaw-XCU8/AAAAAAAAAAI/AAAAAAAAAAA/eShsSxEk_UE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Aerosol",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/7j46cgj0OZlY8KNyDzRz8lnCrJ4\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCExLFFoVxDlI_F5hSdqfGlw"
+            },
+            "snippet": {
+                "publishedAt": "2016-04-18T07:54:42.000Z",
+                "channelId": "UCExLFFoVxDlI_F5hSdqfGlw",
+                "title": "Superhero Comedy",
+                "description": "Superhero Comedy is a Superheroes in Real Life Channel for Kids :)",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-2jbT2fySK6Q/AAAAAAAAAAI/AAAAAAAAAAA/5VoBUBrlX74/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-2jbT2fySK6Q/AAAAAAAAAAI/AAAAAAAAAAA/5VoBUBrlX74/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-2jbT2fySK6Q/AAAAAAAAAAI/AAAAAAAAAAA/5VoBUBrlX74/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Superhero Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/buAz870GaBD_2iRuuByww09FhrI\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC0YvTCy1I4_a-3pn47_5DBA"
+            },
+            "snippet": {
+                "publishedAt": "2012-10-07T16:39:00.000Z",
+                "channelId": "UC0YvTCy1I4_a-3pn47_5DBA",
+                "title": "SaraBeautyCorner - DIY, Comedy, Makeup, Nail Art",
+                "description": "Subscribe for the Coolest and Funniest Beauty Videos! This channel is all about DIY, comedy, makeup tutorials, nail art and other awesome ideas that pop on my mind. Lately, I make mostly...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-IIX-mpNsj5M/AAAAAAAAAAI/AAAAAAAAAAA/lviS6-CHo3Y/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-IIX-mpNsj5M/AAAAAAAAAAI/AAAAAAAAAAA/lviS6-CHo3Y/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-IIX-mpNsj5M/AAAAAAAAAAI/AAAAAAAAAAA/lviS6-CHo3Y/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "SaraBeautyCorner - DIY, Comedy, Makeup, Nail Art",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/UNx6CgvWRzO48ekwRjpNlUQQ6uE\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UChOUtDDW7eduQrCNSi0DVUg"
+            },
+            "snippet": {
+                "publishedAt": "2014-06-13T11:13:56.000Z",
+                "channelId": "UChOUtDDW7eduQrCNSi0DVUg",
+                "title": "Bobonete Stand Up Comedy Official",
+                "description": "Mihai Bobonete, om de televiziune și actor de stand-up comedy român. Este cunoscut ca urmare a interpretării rolului Bobiță din serialul de comedie românesc al ProTV, Las Fierbinți....",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-uixxpVjMlOU/AAAAAAAAAAI/AAAAAAAAAAA/ldFXWBPy9_M/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-uixxpVjMlOU/AAAAAAAAAAI/AAAAAAAAAAA/ldFXWBPy9_M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-uixxpVjMlOU/AAAAAAAAAAI/AAAAAAAAAAA/ldFXWBPy9_M/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Bobonete Stand Up Comedy Official",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/9t31LhMKxQxWEIFTtcju4L23NHc\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCB8P7ypOSIKQSiIAuD5ERvA"
+            },
+            "snippet": {
+                "publishedAt": "2013-12-02T04:47:33.000Z",
+                "channelId": "UCB8P7ypOSIKQSiIAuD5ERvA",
+                "title": "Myanmar Funny comedy Channel",
+                "description": "Please if you own copyright to any material and you want me to remove it from my channel, contact me and I will completely remove your content. Thank you မိတ္ေဆြအားလုံ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-obWa79KM27k/AAAAAAAAAAI/AAAAAAAAAAA/ktllgmq57lU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-obWa79KM27k/AAAAAAAAAAI/AAAAAAAAAAA/ktllgmq57lU/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-obWa79KM27k/AAAAAAAAAAI/AAAAAAAAAAA/ktllgmq57lU/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Myanmar Funny comedy Channel",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/Kw9vUuWBpHlKI9zQVGK0myPoQgw\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UC-ADYx1WHlgh0VK2ENIz_NQ"
+            },
+            "snippet": {
+                "publishedAt": "2016-10-27T05:20:56.000Z",
+                "channelId": "UC-ADYx1WHlgh0VK2ENIz_NQ",
+                "title": "COMEDY TV",
+                "description": "गाँव री बातां गाँव रा लोग मिलसी अठ | LATEST RAJASTHANI COMEDY AND RAJASTHANI FILMS.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-Vgm3GIMXWJU/AAAAAAAAAAI/AAAAAAAAAAA/UXjBgaEx8yE/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-Vgm3GIMXWJU/AAAAAAAAAAI/AAAAAAAAAAA/UXjBgaEx8yE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-Vgm3GIMXWJU/AAAAAAAAAAI/AAAAAAAAAAA/UXjBgaEx8yE/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "COMEDY TV",
+                "liveBroadcastContent": "upcoming"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/NGAtk-x4TtzkdBqwMKCiTMUVK6I\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCQe8nN_BWyKxb0H-SWUJb8A"
+            },
+            "snippet": {
+                "publishedAt": "2011-12-09T11:02:21.000Z",
+                "channelId": "UCQe8nN_BWyKxb0H-SWUJb8A",
+                "title": "Best Comedy",
+                "description": "Представляем канал сборников интересных и захватывающих роликов,приколов, курьёзов, казусных и забавных...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-JYn4jReVUQk/AAAAAAAAAAI/AAAAAAAAAAA/B4nRQypawN0/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-JYn4jReVUQk/AAAAAAAAAAI/AAAAAAAAAAA/B4nRQypawN0/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-JYn4jReVUQk/AAAAAAAAAAI/AAAAAAAAAAA/B4nRQypawN0/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Best Comedy",
+                "liveBroadcastContent": "none"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "\"7991kDR-QPaa9r0pePmDjBEa2h8/pW4bW4cXJB789FppiQ3ijDmDSgQ\"",
+            "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCU9t0Wc9_77gxlOANJ1JCxQ"
+            },
+            "snippet": {
+                "publishedAt": "2015-02-18T18:08:49.000Z",
+                "channelId": "UCU9t0Wc9_77gxlOANJ1JCxQ",
+                "title": "Comedy Bay",
+                "description": "Il Magic English per anarco-disadattati. Stand-up comedy tradotta, digerita e sottotitolata in italiano.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/-WVQ-WCKeXKA/AAAAAAAAAAI/AAAAAAAAAAA/9PrQBgpt3LA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/-WVQ-WCKeXKA/AAAAAAAAAAI/AAAAAAAAAAA/9PrQBgpt3LA/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/-WVQ-WCKeXKA/AAAAAAAAAAI/AAAAAAAAAAA/9PrQBgpt3LA/s240-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                    }
+                },
+                "channelTitle": "Comedy Bay",
+                "liveBroadcastContent": "none"
+            }
+        }
+    ]
+}
