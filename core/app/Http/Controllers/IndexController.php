@@ -41,20 +41,9 @@ class IndexController extends Controller {
         return view('frontend.search')->with(compact('videos', 'query', 'count'));
     }
 
-    public function test(\App\Helpers\YouTubeHelper $helper) {
-            echo '<pre>';
-        try {
-            $params = $helper->getSearchChannelParams('comedys');
-            $results = $helper->getResultInfo($params);
-            var_dump($results);
-            
-            $pages = $helper->paginatedChannelSearch($params);
-            var_dump($pages);
-            
-//       var_dump($vids);
-        } catch (Exception $exc) {
-            echo $exc->getTraceAsString();
-        }
+    public function test() {
+            echo asset('images');
+            die();
     }
 
     public function testTime(VideoRepository $vid) {

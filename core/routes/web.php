@@ -11,7 +11,8 @@
   |
  */
 
-Route::get('/', 'IndexController@index')->name('index');
+Route::get('/', 'IndexController@test')->name('index');
+Route::get('/test', 'IndexController@test')->name('test');
 
 // search result
 Route::get('search', 'IndexController@search')->name('search');
@@ -63,12 +64,12 @@ Route::prefix('sitemap')->group(function () {
 
 Auth::routes();
 // Socialite Routes
-Route::get('login/{provider}', 'LoginController@redirectToProvider')->name('social.login')->where('provider', 'facebook|twitter|google|linkedin');
-Route::get('login/{provider}/response', 'LoginController@handleProviderCallback')->where('provider', 'facebook|twitter|google|linkedin');
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider')->name('social.login')->where('provider', 'facebook|twitter|google|linkedin');
+Route::get('login/{provider}/response', 'Auth\LoginController@handleProviderCallback')->where('provider', 'facebook|twitter|google|linkedin');
 // external logout
 Route::get('logout', 'Auth\LoginController@logout');// logout should be handled with POST request
 
-Route::get('home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('user/{username}/about', 'HomeController@index')->name('user.about');
 Route::get('user/{username}/favourite', 'HomeController@favourite')->name('user.favourite');
@@ -81,7 +82,6 @@ Route::get('blog', 'IndexController@index')->name('blogs');
 Route::get('contact-us', 'IndexController@index')->name('about-us');
 Route::get('about', 'IndexController@index')->name('contact-us');
 
-Route::get('test', 'IndexController@test')->name('test');
 
 
 Route::prefix('admin')->group(function () {
