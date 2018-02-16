@@ -1,7 +1,6 @@
 /nbproject/private/
 /node_modules
-/public/hot
-/public/storage
+/public/*
 /core/storage/*.key
 /core/vendor
 /.idea
