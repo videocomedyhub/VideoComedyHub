@@ -65,6 +65,8 @@ class Google_Service_Genomics_Resource_Operations extends Google_Service_Resourc
    * @param string $name The name of the operation's parent resource.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param int pageSize The maximum number of results to return. If
+   * unspecified, defaults to 256. The maximum value is 2048.
    * @opt_param string filter A string for filtering Operations. The following
    * filter fields are supported
    *
@@ -81,8 +83,6 @@ class Google_Service_Genomics_Resource_Operations extends Google_Service_Resourc
    * = RUNNING` * `projectId = my-project AND labels.color = *` * `projectId = my-
    * project AND labels.color = red`
    * @opt_param string pageToken The standard list page token.
-   * @opt_param int pageSize The maximum number of results to return. If
-   * unspecified, defaults to 256. The maximum value is 2048.
    * @return Google_Service_Genomics_ListOperationsResponse
    */
   public function listOperations($name, $optParams = array())

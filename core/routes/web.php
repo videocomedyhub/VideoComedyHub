@@ -11,11 +11,11 @@
   |
  */
 
-Route::get('/', 'IndexController@test')->name('index');
 Route::get('/test', 'IndexController@test')->name('test');
 
 // search result
 Route::get('search', 'IndexController@search')->name('search');
+Route::get('/', 'IndexController@index')->name('index');
 
 
 Route::get('tag/{slug}', 'IndexController@search')->name('tags.single');
@@ -38,7 +38,6 @@ Route::prefix('videos')->group(function () {
 Route::get('watch/{videoId}', 'VideoController@watch')->name('videos.watch');
 Route::get('video/{slug}', 'VideoController@single')->name('videos.single');
 Route::redirect('/video', '/videos', 301);
-
 
 // categories
 Route::prefix('categories')->group(function () {
@@ -67,7 +66,7 @@ Auth::routes();
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider')->name('social.login')->where('provider', 'facebook|twitter|google|linkedin');
 Route::get('login/{provider}/response', 'Auth\LoginController@handleProviderCallback')->where('provider', 'facebook|twitter|google|linkedin');
 // external logout
-Route::get('logout', 'Auth\LoginController@logout');// logout should be handled with POST request
+Route::get('logout', 'Auth\LoginController@logout'); // logout should be handled with POST request
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -86,17 +85,17 @@ Route::get('about', 'IndexController@index')->name('contact-us');
 
 Route::prefix('admin')->group(function () {
     Route::get('/', 'Admin\AdminDashBoardController@index')->name('admin.dashboard');
-    
+
     // Videos
     Route::get('videos', 'Admin\AdminVideoController@index')->name('admin.videos');
     Route::get('videos/import', 'Admin\AdminVideoController@import')->name('admin.videos.import');
     Route::post('videos/import', 'Admin\AdminVideoController@postImport')->name('admin.videos.import');
-    
+
     // Categories
     Route::get('categories', 'Admin\AdminCategoryController@index')->name('admin.categories');
     Route::get('categories/new', 'Admin\AdminCategoryController@newCategory')->name('admin.categories.new');
     Route::post('categories/new', 'Admin\AdminCategoryController@store');
-    
+
     // Channels
     Route::get('channels', 'Admin\AdminChannelController@index')->name('admin.channels');
     Route::get('channels/new', 'Admin\AdminChannelController@newChannel')->name('admin.channels.new');

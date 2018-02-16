@@ -76,8 +76,8 @@ class Google_Service_Compute_Resource_RegionBackendServices extends Google_Servi
    *
    * @param string $project
    * @param string $region Name of the region scoping this request.
-   * @param string $backendService Name of the BackendService resource to which
-   * the queried instance belongs.
+   * @param string $backendService Name of the BackendService resource for which
+   * to get health.
    * @param Google_Service_Compute_ResourceGroupReference $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_Compute_BackendServiceGroupHealth

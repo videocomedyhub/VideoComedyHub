@@ -183,8 +183,9 @@ class Google_Service_Compute_Resource_Firewalls extends Google_Service_Resource
   }
   /**
    * Updates the specified firewall rule with the data included in the request.
-   * Using PUT method, can only update following fields of firewall rule: allowed,
-   * description, sourceRanges, sourceTags, targetTags. (firewalls.update)
+   * The PUT method can only update the following fields of firewall rule:
+   * allowed, description, sourceRanges, sourceTags, targetTags.
+   * (firewalls.update)
    *
    * @param string $project Project ID for this request.
    * @param string $firewall Name of the firewall rule to update.

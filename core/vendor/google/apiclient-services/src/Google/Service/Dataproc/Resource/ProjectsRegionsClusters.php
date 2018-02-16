@@ -51,6 +51,10 @@ class Google_Service_Dataproc_Resource_ProjectsRegionsClusters extends Google_Se
    * the request.
    * @param string $clusterName Required. The cluster name.
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string clusterUuid Optional. Specifying the cluster_uuid means the
+   * RPC should fail (with error NOT_FOUND) if cluster with specified UUID does
+   * not exist.
    * @return Google_Service_Dataproc_Operation
    */
   public function delete($projectId, $region, $clusterName, $optParams = array())

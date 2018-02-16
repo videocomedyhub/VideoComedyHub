@@ -19,7 +19,6 @@ class Google_Service_Bigquery_QueryTimelineSample extends Google_Model
 {
   public $activeInputs;
   public $completedInputs;
-  public $completedInputsForActiveStages;
   public $elapsedMs;
   public $pendingInputs;
   public $totalSlotMs;
@@ -39,14 +38,6 @@ class Google_Service_Bigquery_QueryTimelineSample extends Google_Model
   public function getCompletedInputs()
   {
     return $this->completedInputs;
-  }
-  public function setCompletedInputsForActiveStages($completedInputsForActiveStages)
-  {
-    $this->completedInputsForActiveStages = $completedInputsForActiveStages;
-  }
-  public function getCompletedInputsForActiveStages()
-  {
-    return $this->completedInputsForActiveStages;
   }
   public function setElapsedMs($elapsedMs)
   {
