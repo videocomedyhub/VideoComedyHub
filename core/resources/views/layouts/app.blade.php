@@ -1,12 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ app()->getLocale() }}">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
         @if(isset($video))
             @include('frontend.header.video')
         @elseif(isset($channel))
@@ -20,7 +14,10 @@
         @else
             @include('frontend.header.other')
         @endif
-              
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">     
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/theme.css')}}">
@@ -39,10 +36,10 @@
                 <!--header-->
                 @include('frontend.commons.offcanvasmenu')
                 <div class="off-canvas-content" data-off-canvas-content>
-                    
+
                     @include('frontend.sections.header')
                     <!-- End Header -->
-                    
+
                     <!-- Content Start -->
                     @yield('content')
                     <!-- Content End -->

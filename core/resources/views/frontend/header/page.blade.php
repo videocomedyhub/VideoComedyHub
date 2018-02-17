@@ -1,3 +1,5 @@
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
 <title>{{$page->title}} - {{config('app.name', 'Video Comedy Hub')}}</title>
 <meta name="description" content="{{ $page->seo_description }}">
 <!-- for Google -->
