@@ -40,6 +40,7 @@ class BatchVideos implements ShouldQueue {
     public function handle(YouTubeHelper $helper) {
         $results = $helper->paginatedVideoSearch($this->params, $this->token);
         ImportMultipleVideos::dispatch(['videos' => $results['videos'], 'category' => $this->category]);
+//                ->delay(now()->addMinutes(10));
         // sending the next batch of videos to self Job.
         if(!empty($results['next'])){
             self::dispatch($this->params, $this->category, $results['next']);

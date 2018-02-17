@@ -184,7 +184,8 @@ class YouTubeHelper {
             return $this->getChannelFromId($cId);
         }
     }
-        public function getChannelsInfo($cIds) {
+
+    public function getChannelsInfo($cIds) {
         $channels = $this->api->getChannelsById($cIds);
         return $this->processChannels($channels);
     }
@@ -228,17 +229,24 @@ class YouTubeHelper {
     public function paginatedVideoSearch($params, $token = null) {
         $result = $this->api->paginateResults($params, $token);
         $vIds = [];
-        foreach ($result['results'] as $v) {
-            array_push($vIds, $v->id->videoId);
+        if (!empty($result['results'])) {
+            foreach ($result['results'] as $v) {
+                array_push($vIds, $v->id->videoId);
+            }
         }
+
         return ['videos' => $vIds, 'next' => $result['info']['nextPageToken'], 'prev' => $result['info']['prevPageToken']];
     }
+
     public function paginatedChannelSearch($params, $token = null) {
         $result = $this->api->paginateResults($params, $token);
         $cIds = [];
-        foreach ($result['results'] as $c) {
-            array_push($cIds, $c->id->channelId);
+        if (!empty($result['results'])) {
+            foreach ($result['results'] as $c) {
+                array_push($cIds, $c->id->channelId);
+            }
         }
+
         return ['channels' => $cIds, 'next' => $result['info']['nextPageToken'], 'prev' => $result['info']['prevPageToken']];
     }
 

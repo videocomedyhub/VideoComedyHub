@@ -8,12 +8,17 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use App\Helpers\YouTubeHelper;
-class ImportSearchedChannels implements ShouldQueue
-{
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-        protected $category;
+class ImportSearchedChannels implements ShouldQueue {
+
+    use Dispatchable,
+        InteractsWithQueue,
+        Queueable,
+        SerializesModels;
+
+    protected $category;
     protected $query;
+
     /**
      * Create a new job instance.
      *
@@ -42,4 +47,5 @@ class ImportSearchedChannels implements ShouldQueue
             echo $exc->getTraceAsString();
         }
     }
+
 }

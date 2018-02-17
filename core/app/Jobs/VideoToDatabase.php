@@ -11,6 +11,7 @@ use App\Repositories\VideoRepository;
 use App\Repositories\ChannelRepository;
 use App\Repositories\TagRepository;
 use App\Helpers\ChannelHelper;
+use App\Entities\Video;
 
 class VideoToDatabase implements ShouldQueue {
 
@@ -45,23 +46,24 @@ class VideoToDatabase implements ShouldQueue {
 
         try {
             // check if video exist
-            $v = $videoRepo->findByField('video_id', $this->video['video_id'], ['id']);
-            if (count($v) !== 0) {
+            $v = Video::where('video_id', '=', $this->video['video_id'])->first();
+            if ($v) {
+                echo "video exists \n";
                 return;
-            }
+            } else {
+                $channel = $channelRepo->existsByChannelId($this->video['channel_id']);
+                if (!$channel) {
+                    $channel = app(ChannelHelper::class)->addNewChannel($this->video['channel_id'], $this->category);
+                }
+                $this->video['channel_id'] = $channel->id;
+                $video = $videoRepo->create($this->video);
+                $video->categories()->attach($this->category);
 
-            $channel = $channelRepo->existsByChannelId($this->video['channel_id']);
-            if (!$channel) {
-                $channel = app(ChannelHelper::class)->addNewChannel($this->video['channel_id'], $this->category);
+                // add tags to the database if not exist
+                $tags = $tagRepo->addTags($this->tags);
+                // add the tags to the video
+                $videoRepo->addTagsToVideo($video, $tags);
             }
-            $this->video['channel_id'] = $channel->id;
-            $video = $videoRepo->create($this->video);
-            $video->categories()->attach($this->category);
-
-            // add tags to the database if not exist
-            $tags = $tagRepo->addTags($this->tags);
-            // add the tags to the video
-            $videoRepo->addTagsToVideo($video, $tags);
         } catch (Exception $exc) {
             echo $exc->getTraceAsString();
         }

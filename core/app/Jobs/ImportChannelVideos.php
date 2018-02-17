@@ -56,7 +56,6 @@ class ImportChannelVideos implements ShouldQueue {
                 $params =  $helper->getChannelVideoListParams($this->channelId, 30);
                 BatchVideos::dispatch($params, $this->category);
             }
-            
         } catch (Exception $exc) {
             echo $exc->getTraceAsString();
         }

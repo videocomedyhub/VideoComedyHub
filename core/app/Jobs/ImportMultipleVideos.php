@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Helpers\YouTubeHelper;
 use App\Jobs\VideoToDatabase;
 use App\Repositories\VideoRepository;
+use App\Entities\Video;
 
 class ImportMultipleVideos implements ShouldQueue {
 
@@ -55,8 +56,11 @@ class ImportMultipleVideos implements ShouldQueue {
     public function filterVideos(array $vIds) {
         $filtered = [];
         foreach ($vIds as $v) {
-            if (!app(VideoRepository::class)->existsByVideoId($v)) {
+            $vid = Video::where('video_id', $v)->first();
+            if (!$vid) {
                 array_push($filtered, $v);
+            } else {
+                echo "video exist\n";
             }
         }
         return $filtered;

@@ -10,6 +10,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Http\Request;
 use App\Helpers\YouTubeHelper;
 use App\Helpers\ChannelHelper;
+use App\Entities\Channel;
 
 class ImportMultipleChannels implements ShouldQueue {
 
@@ -54,7 +55,8 @@ class ImportMultipleChannels implements ShouldQueue {
     public function filterChannels(array $cIds) {
         $filtered = [];
         foreach ($cIds as $ch) {
-            if (!app(ChannelHelper::class)->channelExist($ch)) {
+            $ch = Channel::where('channel_id', $ch)->first();
+            if(!$ch){
                 array_push($filtered, $ch);
             }
         }
