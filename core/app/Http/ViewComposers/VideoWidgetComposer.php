@@ -40,7 +40,7 @@ class VideoWidgetComposer {
         $trending = $this->videoRepo->popularVideos();
         $categories = $this->categoryRepo->widgetList();
         
-        $view->with(['trendingVideos' => $trending, 'categories' => $categories]);
+        $view->with(['trendingVideos' => $trending, 'cats' => $categories]);
     }
 
 }

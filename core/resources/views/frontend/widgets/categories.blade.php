@@ -6,12 +6,12 @@
         </div>
         <div class="widgetContent">
             <ul class="accordion" data-accordion>
-                @foreach($categories as $category)
+                @foreach($cats as $cat)
                 <li class="accordion-item" data-accordion-item>
-                    <a title="{{$category->title}}" href="{{route('categories.single', ['slug' => $category->slug])}}" class="accordion-title">{{$category->title}}</a>
+                    <a title="{{$cat->title}}" href="{{route('categories.single', ['slug' => $cat->slug])}}" class="accordion-title">{{$cat->title}}</a>
                     <div class="accordion-content" data-tab-content>
                         <ul>
-                            @foreach($category->channels as $channel)
+                            @foreach($cat->channels as $channel)
                             <li @if($loop->first)class="clearfix" @endif>
                                 <i class="fa fa-play-circle-o"></i>
                                 <a title="{{$channel->title}}" href="{{route('channels.single',['slug' => $channel->slug])}}">{{$channel->title}} <span>{{$channel->videos()->count()}}</span></a>

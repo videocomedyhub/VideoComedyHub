@@ -1,12 +1,10 @@
 @extends('layouts.app')
 
 @section('styles')
-@parent
 <link rel="stylesheet" href="{{asset('assets/css/jquery.kyco.easyshare.css')}}">
 @endsection
 
 @section('content')
-
 <!--breadcrumbs-->
 @include('frontend.sections.breadcrumb', ['current' => 'categories', 'items' => []])
 <!--end breadcrumbs-->
@@ -38,7 +36,7 @@
                 <div class="row secBg">
                     <div class="large-12 columns">
                         <div class="row column head-text clearfix">
-                            <p class="pull-left">All Categories : <span>1,862 Categories posted</span></p>
+                            <p class="pull-left">All Categories : <span>{{$total}} Categories posted</span></p>
                             <div class="grid-system pull-right show-for-large">
                                 <a class="secondary-button grid-default" href="#"><i class="fa fa-th"></i></a>
                                 <a class="secondary-button current grid-medium" href="#"><i class="fa fa-th-large"></i></a>

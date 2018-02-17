@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use URL;
 use App\Repositories\ChannelRepository;
+use App\Entities\Channel;
 
 class ChannelController extends Controller
 {
@@ -17,6 +18,7 @@ class ChannelController extends Controller
     {
         $data = [];
         $data['channels'] = $this->channelRepo->paginate(20);
+        $data['total'] = Channel::count();
        return view('frontend.channel-list', $data);
     }
     

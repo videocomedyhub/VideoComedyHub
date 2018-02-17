@@ -1,4 +1,4 @@
-<div class="item large-4 medium-6 columns grid-medium end">
+<div class="item large-4 medium-6 columns grid-medium">
     <div class="post thumb-border">
         <div class="post-thumb">
             <img src="{{$cat->image}}" alt="{{$cat->seo_title}}">

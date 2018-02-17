@@ -59,8 +59,6 @@ class ImportMultipleVideos implements ShouldQueue {
             $vid = Video::where('video_id', $v)->first();
             if (!$vid) {
                 array_push($filtered, $v);
-            } else {
-                echo "video exist\n";
             }
         }
         return $filtered;
