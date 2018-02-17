@@ -83,7 +83,7 @@ Route::get('about', 'IndexController@index')->name('contact-us');
 
 
 
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware(['role:admin'])->group(function () {
     Route::get('/', 'Admin\AdminDashBoardController@index')->name('admin.dashboard');
 
     // Videos
