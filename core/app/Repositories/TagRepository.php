@@ -11,6 +11,8 @@ use Prettus\Repository\Contracts\RepositoryInterface;
 interface TagRepository extends RepositoryInterface {
 
     public function firstMap();
-    
+
     public function addTags(array $tags);
+
+    public function findBySlug($slug);
 }

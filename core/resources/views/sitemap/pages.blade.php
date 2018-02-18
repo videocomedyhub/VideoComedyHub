@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     @foreach ($pages as $p)
         <url>
-            <loc>{{ route('page', ['slug' => $p->slug]) }}</loc>
+            <loc>{{ route('pages.single', ['slug' => $p->slug]) }}</loc>
             <lastmod>{{ $p->created_at->tz('UTC')->toAtomString() }}</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>

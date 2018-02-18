@@ -4,9 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Repositories\VideoRepository;
-use App\Entities\Permission;
-use App\Entities\Role;
-use App\Repositories\PageRepository;
 use Carbon\Carbon;
 
 class IndexController extends Controller {
@@ -28,7 +25,7 @@ class IndexController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        return view('frontend.index');
+        return view('frontend.index.index');
     }
 
     public function search() {
@@ -36,10 +33,12 @@ class IndexController extends Controller {
         if (!$query)
             return redirect()->route('index');
 
+        $title = "Search Results for “{$query}”";
         $videos = $this->videoRepo->searchVideos($query);
         $count = $this->videoRepo->searchCount($query);
-        return view('frontend.search')->with(compact('videos', 'query', 'count'));
+        return view('frontend.index.search')->with(compact('videos', 'query', 'count', 'title'));
     }
+    
 
     public function test() {
             echo asset('images');

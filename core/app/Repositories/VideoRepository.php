@@ -25,9 +25,9 @@ interface VideoRepository extends RepositoryInterface {
 
     public function featuredVideos();
 
-    public function newVideos();
+    public function newVideos($count);
 
-    public function popularVideos();
+    public function popularVideos($count);
 
     public function firstMap();
 

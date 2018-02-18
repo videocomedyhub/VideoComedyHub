@@ -16,15 +16,21 @@ class VideoController extends Controller {
     }
 
     public function index(Request $request) {
-        
-    }
-
-    public function popular() {
-        
+        $title = "All Videos";
+        $videos = $this->videoRepo->newVideos();
+        return view('frontend.videos.new')->with(compact('videos', 'title'));
     }
 
     public function newVideos() {
-        
+        $title = "New Videos";
+        $videos = $this->videoRepo->newVideos();
+        return view('frontend.videos.new')->with(compact('videos', 'title'));
+    }
+
+    public function popularVideos() {
+        $title = "Popular Videos";
+        $videos = $this->videoRepo->popularVideos();
+        return view('frontend.videos.popular')->with(compact('videos', 'title'));
     }
 
     public function watch($videoId) {
@@ -39,7 +45,7 @@ class VideoController extends Controller {
         $data['comments'] = [];
         // event to notify video is being watched or opened
         event(new VideoWatched($data['video']));
-        return view('frontend.video-watch', $data);
+        return view('frontend.videos.watch', $data);
     }
 
     public function single($slug) {
@@ -54,8 +60,9 @@ class VideoController extends Controller {
         $data['comments'] = [];
         // event to notify video is being watched or opened
         event(new VideoWatched($data['video']));
-        
 
-        return view('frontend.video-item', $data);
+
+        return view('frontend.videos.item', $data);
     }
+
 }

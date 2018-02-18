@@ -6,9 +6,11 @@
 @endsection
 
 @section('content')
+
 <!--breadcrumbs-->
-@include('frontend.sections.breadcrumb', ['current' => 'Search results for ' . $query , 'items' => []])
+@include('frontend.sections.breadcrumb', ['current' => $tag->name, 'items' => []])
 <!--end breadcrumbs-->
+
 <section class="category-content">
     <div class="row">
         <!-- left side content area -->
@@ -20,7 +22,7 @@
                         <div class="medium-8 small-12 columns">
                             <div class="head-title">
                                 <i class="fa fa-search"></i>
-                                <h4>Search Results for “ {{$query}} ”</h4>
+                                <h4>Tag: {{$tag->name}}</h4>
                             </div>
                         </div>
                     </div>
@@ -28,17 +30,17 @@
                 <div class="row secBg">
                     <div class="large-12 columns">
                         <div class="row column head-text clearfix">
-                            <p class="pull-left">Search Results :<span>{{$count}} {{str_plural('comedy')}} matching {{$query}} found</span></p>
+                            <p class="pull-left">All Videos : <span>{{$tag->videos()->count()}} Videos in {{$tag->name}}</span></p>
                             <div class="grid-system pull-right show-for-large">
                                 <a class="secondary-button grid-default" href="#"><i class="fa fa-th"></i></a>
-                                <a class="secondary-button grid-medium" href="#"><i class="fa fa-th-large"></i></a>
-                                <a class="secondary-button current list" href="#"><i class="fa fa-th-list"></i></a>
+                                <a class="secondary-button current grid-medium" href="#"><i class="fa fa-th-large"></i></a>
+                                <a class="secondary-button list" href="#"><i class="fa fa-th-list"></i></a>
                             </div>
                         </div>
                         <div class="tabs-content" data-tabs-content="newVideos">
                             <div class="tabs-panel is-active" id="new-all">
                                 <div class="row list-group">
-                                    @foreach($videos as $video)
+                                    @foreach($videos as $vid)
                                     @include('frontend.lists.medium-content-video')
                                     @endforeach
                                 </div>
@@ -48,11 +50,9 @@
                     </div>
                 </div>
             </section>
-            
             @include('frontend.sections.adblock')
-            
         </div><!-- end left side content area -->
-         <!-- sidebar -->
+        <!-- sidebar -->
         <div class="large-4 columns">
             @include('frontend.sections.category-sidebar')
         </div><!-- end sidebar -->

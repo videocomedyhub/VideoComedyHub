@@ -17,7 +17,7 @@ class CategoryController extends Controller {
         $data = [];
         $data['categories'] = $this->categoryRepo->paginate(20);
         $data['total'] = Category::count();
-        return view('frontend.category-list', $data);
+        return view('frontend.categories.list', $data);
     }
 
     public function single($slug) {
@@ -29,7 +29,7 @@ class CategoryController extends Controller {
         $data['category'] = $this->categoryRepo->findBySlug($slug);
         $data['videos'] = $data['category']->videos()->paginate(20);
         $data['tags'] = $data['category']->tags;
-        return view('frontend.category-item', $data);
+        return view('frontend.categories.item', $data);
     }
 
     public function featured() {

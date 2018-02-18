@@ -41,11 +41,10 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         return $this->orderBy('published_at', 'desc')->findByField('featured', 1);
     }
 
-    public function newVideos() {
-        $count = config('video.count', 40);
+    public function newVideos($count = null) {
+        $count = (empty($count))?config('video.count', 40): $count;
         $this->orderBy('published_at', 'desc');
-        $this->model = $this->model->take($count);
-        return $this->get();
+        return $this->paginate($count);
     }
 
     public function findByVideoId($videoId, array $with = ['channel', 'tags']) {
@@ -58,11 +57,10 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         return $this->first();
     }
 
-    public function popularVideos() {
-        $count = config('video.count', 40);
+    public function popularVideos($count = null) {
+        $count = empty($count)?config('video.count', 40): $count;
         $this->orderBy('count', 'desc');
-        $this->model = $this->model->take($count);
-        return $this->get();
+        return $this->paginate($count);
     }
 
     public function recentVideos($count) {

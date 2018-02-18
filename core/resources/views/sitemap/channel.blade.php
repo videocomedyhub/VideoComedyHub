@@ -3,7 +3,7 @@
     @foreach ($channels as $c)
         <url>
             <loc>{{ route('channels.single', ['slug' => $c->slug]) }}</loc>
-            <lastmod>{{ $c->created_at->tz('UTC')->toAtomString() }}</lastmod>
+            <lastmod>{{ $c->atom_time }}</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.6</priority>
         </url>

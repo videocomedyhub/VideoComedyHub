@@ -35,6 +35,6 @@ class PageRepositoryEloquent extends BaseRepository implements PageRepository
     }
     
     public function firstMap() {
-        return $this->model()->orderBy('updated_at', 'desc')->first();
+        return $this->orderBy('updated_at', 'desc')->first();
     }
 }

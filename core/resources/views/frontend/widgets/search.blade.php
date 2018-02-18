@@ -5,9 +5,8 @@
             <h5>Search Videos</h5>
         </div>
         <form id="searchform" method="get" role="search" action="{{route('search')}}">
-            {{ csrf_field() }}
             <div class="input-group">
-                <input class="input-group-field" name="search" type="text" placeholder="Enter your keyword">
+                <input class="input-group-field" name="q" type="text" placeholder="Enter your keyword">
                 <div class="input-group-button">
                     <input type="submit" class="button" value="Submit">
                 </div>

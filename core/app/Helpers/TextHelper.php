@@ -19,10 +19,10 @@ class TextHelper {
     }
     
     public static function tagToList($tags) {
-        $i = '';
+        $i = [];
         foreach ($tags as $tag) {
-            $i .= $tag->name . ', ';
+            $i[]= $tag->name;
         }
-        return rtrim($i);
+        return implode(',', $i);
     }
 }

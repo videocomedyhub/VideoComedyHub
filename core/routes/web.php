@@ -18,7 +18,7 @@ Route::get('search', 'IndexController@search')->name('search');
 Route::get('/', 'IndexController@index')->name('index');
 
 
-Route::get('tag/{slug}', 'IndexController@search')->name('tags.single');
+Route::get('tag/{slug}', 'TagController@single')->name('tags.single');
 
 // channels
 Route::prefix('channels')->group(function () {
@@ -32,7 +32,7 @@ Route::get('channel/{channelId}', 'ChannelController@singleById')->name('channel
 // videos
 Route::prefix('videos')->group(function () {
     Route::get('/', 'VideoController@index')->name('videos');
-    Route::get('popular', 'VideoController@popular')->name('videos.popular');
+    Route::get('popular', 'VideoController@popularVideos')->name('videos.popular');
     Route::get('new', 'VideoController@newVideos')->name('videos.new');
 });
 Route::get('watch/{videoId}', 'VideoController@watch')->name('videos.watch');
@@ -46,6 +46,16 @@ Route::prefix('categories')->group(function () {
 });
 Route::get('category/{slug}', 'CategoryController@single')->name('categories.single');
 
+// Posts
+Route::prefix('posts')->group(function () {
+    Route::get('/', 'PostController@index')->name('posts');
+    Route::get('featured', 'PostController@featured')->name('posts.featured');
+});
+Route::get('post/{slug}', 'PostController@single')->name('posts.single');
+
+
+Route::get('page/{slug}', 'PageController@single')->name('pages.single');
+
 // SiteMap
 Route::get('/sitemap.xml', 'SiteMapController@index');
 Route::prefix('sitemap')->group(function () {
@@ -56,6 +66,7 @@ Route::prefix('sitemap')->group(function () {
     Route::get('/channels/{page}', 'SiteMapController@channelList')->name('sitemap.channels.single');
     Route::get('/categories', 'SiteMapController@categories')->name('sitemap.categories');
     Route::get('/tags', 'SiteMapController@tags')->name('sitemap.tags');
+    Route::get('/tags/{page}', 'SiteMapController@tagList')->name('sitemap.tags.single');
     Route::get('/posts', 'SiteMapController@posts')->name('sitemap.posts');
     Route::get('/pages', 'SiteMapController@pages')->name('sitemap.pages');
 });

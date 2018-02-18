@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use URL;
 use App\Repositories\ChannelRepository;
 use App\Entities\Channel;
 
@@ -19,7 +18,7 @@ class ChannelController extends Controller
         $data = [];
         $data['channels'] = $this->channelRepo->paginate(20);
         $data['total'] = Channel::count();
-       return view('frontend.channel-list', $data);
+       return view('frontend.channels.list', $data);
     }
     
     public function single($slug) {
@@ -27,7 +26,7 @@ class ChannelController extends Controller
         $data['channel'] = $this->channelRepo->findBySlug($slug);
         $data['videos'] = $data['channel']->videos()->orderByDesc('published_at')->paginate(40);
         $data['tags'] = $data['channel']->tags;
-        return view('frontend.channel-item', $data);
+        return view('frontend.channels.item', $data);
     }
     
     public function singleById($channelId) {

@@ -23,7 +23,7 @@
             <div class="row secBg">
                 <div class="large-12 columns inner-flex-video">
                     <div class="flex-video widescreen">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{$video->video_id}}?rel=0" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="{{config('youtube.embed') .$video->video_id}}?rel=0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -48,11 +48,11 @@
                                 <div class="post-title">
                                     <h4>{{$video->title}}</h4>
                                     <p>
-                                        <span><i class="fa fa-clock-o"></i>{{$video->published_at}}</span>
+                                        <span><i class="fa fa-clock-o"></i>{{$video->pretty_time}}</span>
                                         <span><i class="fa fa-eye"></i>{{$video->count}}</span>
                                         <span><i class="fa fa-thumbs-o-up"></i>1,862</span>
-                                        <span><i class="fa fa-thumbs-o-down"></i>180</span>
-                                        <span><i class="fa fa-commenting"></i>8</span>
+                                        <span><i class="fa fa-thumbs-o-down"></i>0</span>
+                                        <span><i class="fa fa-commenting"></i>0</span>
                                     </p>
                                 </div>
                                 <div class="subscribe">

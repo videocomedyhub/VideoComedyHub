@@ -28,6 +28,10 @@ class Channel extends Model implements Transformable {
         $dt = new Carbon($this->published_at);
         return $dt->toFormattedDateString();
     }
+        public function getAtomTimeAttribute() {
+        $dt = new Carbon($this->published_at);
+        return $dt->tz('UTC')->toAtomString();
+    }
 
     public function videos() {
         return $this->hasMany('App\Entities\Video');

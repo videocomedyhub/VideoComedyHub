@@ -5,6 +5,8 @@
             @include('frontend.header.video')
         @elseif(isset($channel))
             @include('frontend.header.channel')
+        @elseif(isset($tag))
+            @include('frontend.header.tag')
         @elseif(isset($category))
             @include('frontend.header.category')
         @elseif(isset($page))
@@ -27,6 +29,7 @@
         <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/jquery.kyco.easyshare.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+        <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
         @section('styles')
         @show
     </head>

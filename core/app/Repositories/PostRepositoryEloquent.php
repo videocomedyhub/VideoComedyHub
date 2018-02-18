@@ -24,8 +24,6 @@ class PostRepositoryEloquent extends BaseRepository implements PostRepository
         return Post::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,6 +32,6 @@ class PostRepositoryEloquent extends BaseRepository implements PostRepository
         $this->pushCriteria(app(RequestCriteria::class));
     }
     public function firstMap() {
-        return $this->model()->orderBy('updated_at', 'desc')->first();
+        return $this->orderBy('updated_at', 'desc')->first();
     }
 }

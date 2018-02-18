@@ -4,25 +4,28 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
+use App\Http\ViewComposers\VideoWidgetComposer;
 
-class ComposerServiceProvider extends ServiceProvider
-{
+class ComposerServiceProvider extends ServiceProvider {
+
     /**
      * Bootstrap the application services.
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot() {
         View::composer(
-            'frontend.*', \App\Http\ViewComposers\SettingComposer::class
+                'frontend.*', \App\Http\ViewComposers\SettingComposer::class
         );
         View::composer(
-            'frontend.*', \App\Http\ViewComposers\VideoComposer::class
+                'frontend.*', \App\Http\ViewComposers\VideoComposer::class
         );
         View::composer(
-            ['frontend.video-item', 'frontend.video-watch', 'frontend.channel-item',
-                'frontend.channel-list', 'frontend.category-item', 'frontend.category-list', 'frontend.search'], \App\Http\ViewComposers\VideoWidgetComposer::class
+                [
+            'frontend.videos.*',
+            'frontend.channels.*', 'frontend.categories.*',
+            'frontend.index.search', 'frontend.tags.*'
+                ], VideoWidgetComposer::class
         );
     }
 
@@ -31,8 +34,8 @@ class ComposerServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
+    public function register() {
         //
     }
+
 }

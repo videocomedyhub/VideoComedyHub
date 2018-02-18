@@ -2,10 +2,6 @@
 
 @section('content')
 
-<!-- layerslider -->
-@include('frontend.sections.layerslider')
-<!--end slider-->
-
 <!-- Premium Videos -->
 @include('frontend.sections.premiumvideo')
 <!-- End Premium Videos -->

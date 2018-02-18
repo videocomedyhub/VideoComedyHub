@@ -64,7 +64,11 @@ class Video extends Model implements Transformable {
     
     public function getPrettyTimeAttribute() {
         $dt = new Carbon($this->published_at);
-        return $dt->toFormattedDateString();
+        return $dt->diffForHumans();
+    }
+    public function getAtomTimeAttribute() {
+        $dt = new Carbon($this->published_at);
+        return $dt->tz('UTC')->toAtomString();
     }
     public function getSecondsAttribute() {
         return $this->duration;
