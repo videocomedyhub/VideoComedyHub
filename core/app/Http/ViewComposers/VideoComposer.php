@@ -37,12 +37,10 @@ class VideoComposer {
      * @return void
      */
     public function compose(View $view) {
-        $featured = $this->videoRepo->featuredVideos();
-        $newVideos = $this->videoRepo->newVideos();
-        $popularVideos = $this->videoRepo->popularVideos();
-        $featuredCategories = $this->categoryRepo->featured();
-//        var_dump($featuredCategories);
-//        die();
+        $featured = $this->videoRepo->featuredVideos(15);
+        $newVideos = $this->videoRepo->newVideos(20);
+        $popularVideos = $this->videoRepo->popularVideos(20);
+        $featuredCategories = $this->categoryRepo->featured(15);
         
         $view->with(['featuredVideos' => $featured, 'featuredCategories' => $featuredCategories,
             'newVideos' => $newVideos, 'popularVideos' => $popularVideos, 'watchedVideos' => $newVideos]);

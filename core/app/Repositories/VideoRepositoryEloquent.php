@@ -37,8 +37,10 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         $this->pushCriteria(app(RequestCriteria::class));
     }
 
-    public function featuredVideos() {
-        return $this->orderBy('published_at', 'desc')->findByField('featured', 1);
+    public function featuredVideos($count = null) {
+        $count = (empty($count))?config('video.count', 40): $count;
+        return $this->orderBy('published_at', 'desc')->model->where('featured', 1);
+        return $this->paginate($count);
     }
 
     public function newVideos($count = null) {

@@ -43,12 +43,14 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
         return $v->paginate($this->perPage);
     }
 
-    public function featured() {
-        return $this->orderBy('created_at', 'desc')->findByField('featured', 1);
+    public function featured($count = null) {
+        $count = (empty($count)) ? config('video.count', 40) : $count;
+        $this->orderBy('created_at', 'desc')->model->where('featured', 1);
+        return $this->paginate($count);
     }
 
     public function widgetList() {
-        return $this->model->has('channels')->get();
+        return  $this->model->whereHas('channels.videos')->get();
     }
 
     public function findBySlug($slug) {

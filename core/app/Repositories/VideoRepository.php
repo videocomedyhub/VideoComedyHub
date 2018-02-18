@@ -23,7 +23,7 @@ interface VideoRepository extends RepositoryInterface {
 
     public function searchCount($term);
 
-    public function featuredVideos();
+    public function featuredVideos($count);
 
     public function newVideos($count);
 

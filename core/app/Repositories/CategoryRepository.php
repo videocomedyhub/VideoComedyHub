@@ -14,7 +14,7 @@ interface CategoryRepository extends RepositoryInterface {
 
     public function videosByCategory(\App\Entities\Category $category);
 
-    public function featured();
+    public function featured($count);
 
     public function findBySlug($slug);
 
