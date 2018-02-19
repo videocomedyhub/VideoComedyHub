@@ -22,6 +22,8 @@
                     <i class="fa fa-user"></i>
                     <span><a href="{{route('channels.single',['slug' => $vid->channel->slug])}}" title="{{$vid->channel->title}}">{{$vid->channel->title}}</a></span>
                 </p>
+            </div>
+            <div class="post-stats clearfix">
                 <p class="pull-left">
                     <i class="fa fa-clock-o"></i>
                     <span>{{$vid->pretty_time}}</span>

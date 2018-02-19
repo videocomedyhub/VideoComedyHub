@@ -39,7 +39,7 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
 
     public function featuredVideos($count = null) {
         $count = (empty($count))?config('video.count', 40): $count;
-        return $this->orderBy('published_at', 'desc')->model->where('featured', 1);
+        $this->orderBy('published_at', 'desc')->model->where('featured', 1);
         return $this->paginate($count);
     }
 

@@ -54,7 +54,6 @@
             </div><!--end off canvas wrapper inner-->
         </div><!--end off canvas wrapper-->
         <!-- script files -->
-        @section('scripts')
         <script src="{{asset('assets/bower_components/jquery/dist/jquery.js')}}"></script>
         <script src="{{asset('assets/bower_components/what-input/what-input.js')}}"></script>
         <script src="{{asset('assets/bower_components/foundation-sites/dist/foundation.js')}}"></script>
@@ -67,6 +66,7 @@
         <script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
         <script src="{{asset('assets/js/inewsticker.js')}}" type="text/javascript"></script>
         <script src="{{asset('assets/js/jquery.kyco.easyshare.js')}}" type="text/javascript"></script>
+        @section('scripts')
         @show
     </body>
 </html>
