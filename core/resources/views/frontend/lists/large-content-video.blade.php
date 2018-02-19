@@ -20,7 +20,7 @@
             <div class="post-stats clearfix">
                 <p class="pull-left">
                     <i class="fa fa-user"></i>
-                    <span><a title="{{$vid->channel->title}}" href="{{route('channels.single',['slug' => $vid->channel->slug])}}">{{$vid->channel->title}}</a></span>
+                    <span><a title="{{$vid->channel->title}}" href="{{route('channels.single',['slug' => $vid->channel->slug])}}">{{str_limit($vid->channel->title,35)}}</a></span>
                 </p>
             </div>
             <div class="post-stats clearfix">
