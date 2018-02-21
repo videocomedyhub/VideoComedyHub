@@ -30,6 +30,7 @@ class ImportMultipleChannels implements ShouldQueue {
     public function __construct($request) {
         if ($request instanceof Request) {
             $this->category = $request->input('category');
+            var_dump($request->input('channels'));
             $this->cIds = $this->filterChannels($request->input('channels'));
         } else {
             $this->category = $request['category'];
