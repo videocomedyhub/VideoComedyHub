@@ -47,10 +47,10 @@ class ChannelToDatabase implements ShouldQueue {
         } else {
             $this->channel['user_id'] = config('youtube.user', 1);
             $channel = $channelRepo->create($this->channel);
-            echo " created channed: {$channel->title}";
+            echo " created channel: {$channel->title}";
             $channel->categories()->attach($this->category);
             // start importing the channel videos keep this for now
-            // ImportChannelVideos::dispatch(['channel' => $channel->channel_id, 'category' => $this->category]);
+             ImportChannelVideos::dispatch(['channel' => $channel->channel_id, 'category' => $this->category])->delay(now()->addMinutes(20));
             // update last updated
             $date = new Carbon();
             $channel->last_fetched = $date->toDateTimeString();
