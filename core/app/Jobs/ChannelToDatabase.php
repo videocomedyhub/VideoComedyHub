@@ -39,7 +39,7 @@ class ChannelToDatabase implements ShouldQueue {
      * @return void
      */
     public function handle(ChannelRepository $channelRepo) {
-
+        var_dump($this->channel);
         $channel = Channel::where('channel_id', $this->channel['channel_id'])->first();
         if ($channel) {
             echo "channel exist\n";

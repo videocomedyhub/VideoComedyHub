@@ -44,6 +44,7 @@ class ImportMultipleChannels implements ShouldQueue {
      */
     public function handle(YouTubeHelper $helper) {
         if (count($this->cIds) > 0) {
+            var_dump($this->cIds);
             $channels = $helper->getChannelsInfo($this->cIds);
             foreach ($channels as $ch) {
                 $ch['category'] = $this->category;
