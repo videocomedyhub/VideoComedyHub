@@ -30,7 +30,6 @@ class ImportMultipleChannels implements ShouldQueue {
     public function __construct($request) {
         if ($request instanceof Request) {
             $this->category = $request->input('category');
-            var_dump($request->input('channels'));
             $this->cIds = $this->filterChannels($request->input('channels'));
         } else {
             $this->category = $request['category'];
@@ -45,7 +44,6 @@ class ImportMultipleChannels implements ShouldQueue {
      */
     public function handle(YouTubeHelper $helper) {
         if (count($this->cIds) > 0) {
-            var_dump($this->cIds);
             $channels = $helper->getChannelsInfo($this->cIds);
             foreach ($channels as $ch) {
                 $ch['category'] = $this->category;
@@ -56,10 +54,10 @@ class ImportMultipleChannels implements ShouldQueue {
 
     public function filterChannels(array $cIds) {
         $filtered = [];
-        foreach ($cIds as $ch) {
-            $ch = Channel::where('channel_id', $ch)->first();
+        foreach ($cIds as $c) {
+            $ch = Channel::where('channel_id', $c)->first();
             if(!$ch){
-                array_push($filtered, $ch);
+                array_push($filtered, $c);
             }
         }
         return $filtered;

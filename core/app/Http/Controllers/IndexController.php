@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\VideoRepository;
 use Carbon\Carbon;
+use App\Helpers\YouTubeHelper;
+use App\Entities\Channel;
 
 class IndexController extends Controller {
 
@@ -38,11 +40,17 @@ class IndexController extends Controller {
         $count = $this->videoRepo->searchCount($query);
         return view('frontend.index.search')->with(compact('videos', 'query', 'count', 'title'));
     }
-    
 
-    public function test() {
-            echo asset('images');
-            die();
+    public function test(YouTubeHelper $helper) {
+        $params = $helper->getSearchChannelParams('comedy');
+        $results = $helper->paginatedChannelSearch($params, null);
+        $filts = $this->filterChannels($results['channels']);
+
+        echo '<pre>';
+        var_dump($params);
+        var_dump($results);
+        var_dump($filts);
+        die();
     }
 
     public function testTime(VideoRepository $vid) {

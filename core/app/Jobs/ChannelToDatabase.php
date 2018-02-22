@@ -39,15 +39,12 @@ class ChannelToDatabase implements ShouldQueue {
      * @return void
      */
     public function handle(ChannelRepository $channelRepo) {
-        var_dump($this->channel);
         $channel = Channel::where('channel_id', $this->channel['channel_id'])->first();
         if ($channel) {
-            echo "channel exist\n";
             return;
         } else {
             $this->channel['user_id'] = config('youtube.user', 1);
             $channel = $channelRepo->create($this->channel);
-            echo " created channel: {$channel->title}";
             $channel->categories()->attach($this->category);
             // start importing the channel videos keep this for now
              ImportChannelVideos::dispatch(['channel' => $channel->channel_id, 'category' => $this->category])->delay(now()->addMinutes(20));
