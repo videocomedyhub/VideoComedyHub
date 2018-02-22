@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Repositories\VideoRepository;
 use Carbon\Carbon;
 use App\Helpers\YouTubeHelper;
-use App\Entities\Channel;
+use App\Repositories\CategoryRepository;
+use App\Repositories\ChannelRepository;
 
 class IndexController extends Controller {
 
@@ -17,8 +18,10 @@ class IndexController extends Controller {
      *
      * @return void
      */
-    public function __construct(VideoRepository $video) {
+    public function __construct(VideoRepository $video, CategoryRepository $category, ChannelRepository $channel) {
         $this->videoRepo = $video;
+        $this->channelRepo = $channel;
+        $this->categoryRepo = $category;
     }
 
     /**
@@ -27,7 +30,12 @@ class IndexController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        return view('frontend.index.index');
+        $featuredVideos = $this->videoRepo->featuredVideos(15);
+       // $watchedVideos = $featuredVideos;
+        $newVideos = $this->videoRepo->newVideos(20);
+        $popularVideos = $this->videoRepo->popularVideos(20);
+        $featuredCategories = $this->categoryRepo->featured(15);
+        return view('frontend.index.index', compact('featuredVideos','featuredCategories','newVideos','popularVideos'));
     }
 
     public function search() {

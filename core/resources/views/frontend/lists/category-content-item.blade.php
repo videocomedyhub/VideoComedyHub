@@ -1,7 +1,7 @@
 <div class="item large-4 medium-6 columns grid-medium">
     <div class="post thumb-border">
         <div class="post-thumb">
-            <img src="{{$cat->image}}" alt="{{$cat->seo_title}}">
+            <img src="{{asset('uploads/categories/' . $cat->image)}}" alt="{{$cat->seo_title}}">
             <a title="{{$cat->title}}" href="{{route('categories.single', ['slug' => $cat->slug])}}" class="hover-posts">
                 <span><i class="fa fa-search"></i>View Category</span>
             </a>

@@ -23,9 +23,9 @@
 <!-- End main content -->
 
 <!-- movies -->
-@include('frontend.sections.watch-list')
+{{-- @include('frontend.sections.watch-list') --}}
 <!-- End movie -->
 
-@include('frontend.sections.adblock')
+{{-- @include('frontend.sections.adblock') --}}
 
 @endsection

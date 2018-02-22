@@ -11,9 +11,6 @@
 @include('frontend.sections.breadcrumb', ['current' => $category->title, 'items' => ['categories' => route('categories')]])
 <!--end breadcrumbs-->
 
-<!-- Premium Videos -->
-@include('frontend.sections.premiumvideo')
-<!-- End Premium Videos -->
 <section class="category-content">
     <div class="row">
         <!-- left side content area -->

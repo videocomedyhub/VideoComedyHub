@@ -18,9 +18,6 @@ class ComposerServiceProvider extends ServiceProvider {
                 'frontend.*', \App\Http\ViewComposers\SettingComposer::class
         );
         View::composer(
-                'frontend.*', \App\Http\ViewComposers\VideoComposer::class
-        );
-        View::composer(
                 [
             'frontend.videos.*',
             'frontend.channels.*', 'frontend.categories.*',
