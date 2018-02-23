@@ -70,7 +70,7 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
     }
 
     public function relatedVideos(Video $video) {
-        $count = config('video.count', 40);
+        $count = config('video.related', 5);
         $this->model = $this->model->whereHas('channel', function($q)use ($video) {
                     $q->where('id', '=', $video->channel->id);
                 })->where('id', '!=', $video->id)->take($count);
