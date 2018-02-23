@@ -6,7 +6,7 @@
                     <h5>About {{config('app.name')}}</h5>
                 </div>
                 <div class="textwidget">
-                    Betube video wordpress theme lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s book.
+                    Video Comedy Hub is an entertainment platform that integrate and embed video comedies from various comedians across the world. User enjoy great comedy from their favourite comedians.
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "http://placehold.it/80x80" alt="recent">
+                                <img src= "https://placehold.it/80x80" alt="recent">
                                 <a href="#" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
