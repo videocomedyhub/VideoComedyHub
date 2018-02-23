@@ -18,7 +18,7 @@
 jQuery.noConflict();
 var kyco = kyco || {};
 
-kyco.API_PATH = '../api/easyshare.php';
+kyco.API_PATH = 'https://www.videocomedyhub.com/easyshare.php';
 
 kyco.easyShare = function() {
   var easyshares = [];
