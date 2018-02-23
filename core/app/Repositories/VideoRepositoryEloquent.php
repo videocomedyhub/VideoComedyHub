@@ -68,7 +68,7 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         return $video;
     }
 
-    public function findBySlug($slug, array $with = ['channel', 'tags']) {
+    public function findBySlug($slug, array $with = ['channel']) {
         $that = $this;
         $video = Cache::remember('video_' . $slug, 1500, function() use($slug, $with, $that) {
                     return $that->with($with)->model->where('slug', '=', $slug)->first();
