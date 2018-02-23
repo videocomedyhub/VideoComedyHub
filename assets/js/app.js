@@ -3,14 +3,14 @@ jQuery(document).foundation();
 jQuery(document).ready(function(jQuery){
     "use strict";
     /*Layer slider trigger*/
-    jQuery("#layerslider").layerSlider({
-        responsive: false,
-        responsiveUnder: 1280,
-        layersContainer: 1280,
-        skin: 'noskin',
-        hoverPrevNext: false,
-        skinsPath: '../layerslider/skins/'
-    });
+//    jQuery("#layerslider").layerSlider({
+//        responsive: false,
+//        responsiveUnder: 1280,
+//        layersContainer: 1280,
+//        skin: 'noskin',
+//        hoverPrevNext: false,
+//        skinsPath: '../layerslider/skins/'
+//    });
     //login register click
     jQuery(".loginReg").on("click", function(e){
         e.preventDefault();
