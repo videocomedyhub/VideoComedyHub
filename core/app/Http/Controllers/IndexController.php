@@ -31,11 +31,11 @@ class IndexController extends Controller {
      */
     public function index() {
         $featuredVideos = $this->videoRepo->featuredVideos(15);
-       // $watchedVideos = $featuredVideos;
+        // $watchedVideos = $featuredVideos;
         $newVideos = $this->videoRepo->newVideos(20);
         $popularVideos = $this->videoRepo->popularVideos(20);
         $featuredCategories = $this->categoryRepo->featured(15);
-        return view('frontend.index.index', compact('featuredVideos','featuredCategories','newVideos','popularVideos'));
+        return view('frontend.index.index', compact('featuredVideos', 'featuredCategories', 'newVideos', 'popularVideos'));
     }
 
     public function search() {
@@ -50,15 +50,12 @@ class IndexController extends Controller {
     }
 
     public function test(YouTubeHelper $helper) {
-        $params = $helper->getSearchChannelParams('comedy');
-        $results = $helper->paginatedChannelSearch($params, null);
-        $filts = $this->filterChannels($results['channels']);
-
-        echo '<pre>';
-        var_dump($params);
-        var_dump($results);
-        var_dump($filts);
-        die();
+        $headers = get_headers('http://www.youtube.com/oembed?url=https://youtu.be/LhZX6qHrbkQ');
+        if (!strpos($headers[0], '200')) {
+            echo "The YouTube video you entered does not exist";
+        }else{
+            echo 'Video Exists';
+        }
     }
 
     public function testTime(VideoRepository $vid) {
