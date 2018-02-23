@@ -76,41 +76,41 @@ class VideoController extends Controller {
 
     public function single($slug) {
 
-        $data = Cache::remember($slug, 20, function () use ($slug) {
-                    $data = [];
-                    $data['video'] = $this->videoRepo->findBySlug($slug);
-                    if (!($data['video'] instanceof Video)) {
-                        return redirect('/');
-                    }
-                    $data['tags'] = $data['video']->tags;
-                    $data['relatedVideos'] = $this->videoRepo->relatedVideos($data['video']);
-                    $data['nextVideos'] = $data['relatedVideos'];
-                    $data['comments'] = [];
+        $data = [];
+        $data['video'] = $this->videoRepo->findBySlug($slug);
+        if (!($data['video'] instanceof Video)) {
+            var_dump($data['video']);
+            die();
+//            return redirect('/');
+        }
+        $data['tags'] = $data['video']->tags;
+        $data['relatedVideos'] = $this->videoRepo->relatedVideos($data['video']);
+        $data['nextVideos'] = $data['relatedVideos'];
+        $data['comments'] = [];
 
-                    // adding ld+json structured data
-                    $e = [
-                        "@context" => "http://schema.org",
-                        "@type" => "VideoObject",
-                        "name" => $data['video']->title,
-                        "description" => $data['video']->description,
-                        "thumbnailUrl" => [
-                            $data['video']->default_thumbnail,
-                            $data['video']->medium_thumbnail,
-                            $data['video']->high_thumbnail,
-                        ],
-                        "uploadDate" => $data['video']->atom_time,
-                        "duration" => $data['video']->atom_duration,
-                        "embedUrl" => config('youtube.embed') . $data['video']->video_id,
-                        "interactionCount" => $data['video']->count
-                    ];
-                    $data['structured'] = json_encode($e);
-                    return $data;
-                });
-
+        // adding ld+json structured data
+        $e = [
+            "@context" => "http://schema.org",
+            "@type" => "VideoObject",
+            "name" => $data['video']->title,
+            "description" => $data['video']->description,
+            "thumbnailUrl" => [
+                $data['video']->default_thumbnail,
+                $data['video']->medium_thumbnail,
+                $data['video']->high_thumbnail,
+            ],
+            "uploadDate" => $data['video']->atom_time,
+            "duration" => $data['video']->atom_duration,
+            "embedUrl" => config('youtube.embed') . $data['video']->video_id,
+            "interactionCount" => $data['video']->count
+        ];
+        $data['structured'] = json_encode($e);
         if (array_key_exists('video', $data)) {
             // event to notify video is being watched or opened
             event(new VideoWatched($data['video']));
         }
+//        var_dump($data);
+//        die();
 
         return view('frontend.videos.item', $data);
     }

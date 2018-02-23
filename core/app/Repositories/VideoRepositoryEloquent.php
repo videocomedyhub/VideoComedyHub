@@ -8,6 +8,8 @@ use App\Repositories\VideoRepository;
 use App\Entities\Video;
 use App\Validators\VideoValidator;
 use App\Entities\Scopes\ActiveScope;
+use Cache;
+
 /**
  * Class VideoRepositoryEloquent
  * @package namespace App\Repositories;
@@ -38,31 +40,50 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
     }
 
     public function featuredVideos($count = null) {
-        $count = (empty($count))?config('video.count', 40): $count;
-        $this->orderBy('published_at', 'desc')->model->where('featured', 1);
-        return $this->paginate($count);
+        $page = empty(request()->input('page')) ? 1 : request()->input('page');
+        $count = (empty($count)) ? config('video.count', 40) : $count;
+        $that = $this;
+        $videos = Cache::remember('featured_videos_' . $page, 1500, function() use ($count, $that) {
+                    $that->orderBy('published_at', 'desc')->model->where('featured', 1);
+                    return $that->paginate($count);
+                });
+        return $videos;
     }
 
     public function newVideos($count = null) {
-        $count = (empty($count))?config('video.count', 40): $count;
-        $this->orderBy('published_at', 'desc');
-        return $this->paginate($count);
+        $page = empty(request()->input('page')) ? 1 : request()->input('page');
+        $count = (empty($count)) ? config('video.count', 40) : $count;
+        $that = $this;
+        $videos = Cache::remember('new_videos_' . $page, 1500, function() use($count, $that) {
+                    return $that->orderBy('published_at', 'desc')->paginate($count);
+                });
+        return $videos;
     }
 
     public function findByVideoId($videoId, array $with = ['channel', 'tags']) {
-        $this->with($with)->model->where('video_id', '=', $videoId);
-        return $this->first();
+        $that = $this;
+        $video = Cache::remember($videoId, 1500, function()use ($videoId, $with, $that) {
+                    return $that->with($with)->model->where('video_id', '=', $videoId)->first();
+                });
+        return $video;
     }
 
     public function findBySlug($slug, array $with = ['channel', 'tags']) {
-        $this->with($with)->model->where('slug', '=', $slug);
-        return $this->first();
+        $that = $this;
+        $video = Cache::remember('video_' . $slug, 1500, function() use($slug, $with, $that) {
+                    return $that->with($with)->model->where('slug', '=', $slug)->first();
+                });
+        return $video;
     }
 
     public function popularVideos($count = null) {
-        $count = empty($count)?config('video.count', 40): $count;
-        $this->orderBy('count', 'desc');
-        return $this->paginate($count);
+        $page = empty(request()->input('page')) ? 1 : request()->input('page');
+        $count = empty($count) ? config('video.count', 40) : $count;
+        $that = $this;
+        $videos = Cache::remember('popular_videos_' . $page, 1500, function()use ($count, $that) {
+                    return $that->orderBy('count', 'desc')->paginate($count);
+                });
+        return $videos;
     }
 
     public function recentVideos($count) {
@@ -71,10 +92,13 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
 
     public function relatedVideos(Video $video) {
         $count = config('video.related', 5);
-        $this->model = $this->model->whereHas('channel', function($q)use ($video) {
-                    $q->where('id', '=', $video->channel->id);
-                })->where('id', '!=', $video->id)->take($count);
-        return $this->get();
+        $that = $this;
+        $videos = Cache::remember('related_video_' . $video->slug, 1500, function() use($video, $count, $that) {
+            return $that->model->whereHas('channel', function($q)use ($video) {
+                        $q->where('id', '=', $video->channel->id);
+                    })->where('id', '!=', $video->id)->take($count)->get();
+        });
+        return $videos;
     }
 
     public function firstMap() {
@@ -97,9 +121,11 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
     public function getAllAdmin() {
         return $this->model->with(['channel'])->withoutGlobalScope(ActiveScope::class)->paginate(50);
     }
+
     public function countAllAdmin() {
         return $this->model->withoutGlobalScope(ActiveScope::class)->count();
     }
+
     public function addTagsToVideo(Video $video, array $tags) {
         $tagIds = [];
         foreach ($tags as $t) {
@@ -107,10 +133,9 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         }
         $video->tags()->syncWithoutDetaching($tagIds);
     }
-    
+
     public function existsByVideoId($videeoId) {
         return $this->model->where('video_id', $videeoId)->first();
     }
-    
 
 }
