@@ -6,7 +6,7 @@
         </div>
         <div class="widgetContent">
             <div class="advBanner text-center">
-                <a href="#"><img src="{{asset('assets/images/preload.png')}}"  data-original="{{asset('assets/images/sideradv.png')}}" alt="sidebar adv"></a>
+                <a href="#"><img class="ld" src="{{asset('assets/images/preload.png')}}"  data-original="{{asset('assets/images/sideradv.png')}}" alt="sidebar adv"></a>
             </div>
         </div>
     </div>

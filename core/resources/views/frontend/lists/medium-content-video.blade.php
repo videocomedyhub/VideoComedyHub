@@ -1,7 +1,7 @@
 <div class="item large-4 medium-6 columns grid-medium{{$loop->last? ' end': ''}}">
     <div class="post thumb-border">
         <div class="post-thumb">
-            <img src="{{asset('assets/images/preload.png')}}"  data-original="{{$vid->thumbnail}}" alt="{{$vid->seo_title}}">
+            <img class="ld" src="{{asset('assets/images/preload.png')}}"  data-original="{{$vid->thumbnail}}" alt="{{$vid->seo_title}}">
             <a title="{{$vid->title}}" href="{{route('videos.single',['slug' => $vid->slug])}}" class="hover-posts" title="{{$vid->seo_title}}">
                 <span><i class="fa fa-play"></i>Watch Video</span>
             </a>

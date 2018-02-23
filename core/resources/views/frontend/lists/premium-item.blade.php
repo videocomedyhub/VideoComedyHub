@@ -1,6 +1,6 @@
 <div class="item">
     <figure class="premium-img">
-        <img src="{{asset('assets/images/preload.png')}}"  data-original="{{$vid->thumbnail}}" alt="{{$vid->seo_title}}">
+        <img class="ld" src="{{asset('assets/images/preload.png')}}"  data-original="{{$vid->thumbnail}}" alt="{{$vid->seo_title}}">
         <figcaption>
             <h5>{{str_limit($vid->title, 30)}}</h5>
             <p>{{$vid->channel->title}}</p>

@@ -1,7 +1,7 @@
 <div class="item large-4 medium-6 columns grid-medium">
     <div class="post thumb-border">
         <div class="post-thumb">
-            <img src="{{asset('assets/images/preload.png')}}"  data-original="{{$ch->thumbnail}}" alt="{{$ch->seo_title}}">
+            <img class="ld" src="{{asset('assets/images/preload.png')}}"  data-original="{{$ch->thumbnail}}" alt="{{$ch->seo_title}}">
             <a title="{{$ch->title}}" href="{{route('channels.single', ['slug' => $ch->slug])}}" class="hover-posts">
                 <span><i class="fa fa-search"></i>View Channel</span>
             </a>
