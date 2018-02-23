@@ -27,7 +27,7 @@
             <div class="row secBg">
                 <div class="large-12 columns inner-flex-video">
                     <div class="flex-video widescreen">
-                        <iframe width="560" height="315" src="{{config('youtube.embed') .$video->video_id}}?rel=0" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="{{asset('assets/images/preload.png')}}"  data-original="{{config('youtube.embed') .$video->video_id}}?rel=0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                         <div class="media-object-section">
                             <div class="author-img-sec">
                                 <div class="thumbnail author-single-post">
-                                    <a href="{{route('channels.single', ['slug' => $video->channel->slug])}}"><img src= "{{$video->channel->thumbnail}}" alt="{{$video->channel->seo_title}}"></a>
+                                    <a href="{{route('channels.single', ['slug' => $video->channel->slug])}}"><img src="{{asset('assets/images/preload.png')}}"  data-original= "{{$video->channel->thumbnail}}" alt="{{$video->channel->seo_title}}"></a>
                                 </div>
                                 <p class="text-center"><a href="{{route('channels.single', ['slug' => $video->channel->slug])}}">{{$video->channel->title}}</a></p>
                             </div>

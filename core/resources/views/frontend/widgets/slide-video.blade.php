@@ -21,7 +21,7 @@
                     @foreach($trendingVideos as $video)
                     <div class="item item-video thumb-border">
                         <figure class="premium-img">
-                            <img src="{{$video->thumbnail}}"  alt="{{$video->seo_title}}">
+                            <img src="{{asset('assets/images/preload.png')}}"  data-original="{{$video->thumbnail}}"  alt="{{$video->seo_title}}">
                             <a title="{{$video->title}}" href="{{route('videos.single',['slug' => $video->slug])}}" class="hover-posts">
                                 <span><i class="fa fa-play"></i></span>
                             </a>

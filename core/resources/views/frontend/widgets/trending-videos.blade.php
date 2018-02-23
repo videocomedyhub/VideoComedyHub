@@ -9,7 +9,7 @@
             <div class="media-object stack-for-small">
                 <div class="media-object-section">
                     <div class="recent-img">
-                        <img src= "{{$video->thumbnail}}" alt="{{$video->seo_title}}">
+                        <img src="{{asset('assets/images/preload.png')}}"  data-original="{{$video->thumbnail}}" alt="{{$video->seo_title}}">
                         <a title="{{$video->title}}" href="{{route('videos.single',['slug' => $video->slug])}}" class="hover-posts">
                             <span><i class="fa fa-play"></i></span>
                         </a>

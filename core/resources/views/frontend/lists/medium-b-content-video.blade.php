@@ -1,7 +1,7 @@
 <div class="item large-4 columns end group-item-grid-default">
     <div class="post thumb-border">
         <div class="post-thumb">
-            <img src="{{$vid->thumbnail}}" alt="{{$vid->seo_title}}">
+            <img src="{{asset('assets/images/preload.png')}}"  data-original="{{$vid->thumbnail}}" alt="{{$vid->seo_title}}">
             <a title="{{$vid->title}}" href="{{route('videos.single',['slug' => $vid->slug])}}" class="hover-posts">
                 <span><i class="fa fa-play"></i>Watch Video</span>
             </a>

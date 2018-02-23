@@ -8,7 +8,7 @@
             @foreach($nextVideos as $video)
             <div class="video-box thumb-border">
                 <div class="video-img-thumb">
-                    <img src="{{$video->thumbnail}}" alt="{{$video->seo_title}}" style="width: 300px; height: 190px;">
+                    <img src="{{asset('assets/images/preload.png')}}"  data-original="{{$video->thumbnail}}" alt="{{$video->seo_title}}" style="width: 300px; height: 190px;">
                     <a title="{{$video->seo_title}}" href="{{route('videos.single',['slug' => $video->slug])}}" class="hover-posts">
                         <span><i class="fa fa-play"></i>Watch Video</span>
                     </a>
