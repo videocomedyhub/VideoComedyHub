@@ -21,8 +21,8 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">     
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
-        <link rel="stylesheet" href="{{asset('assets/css/theme.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/app.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/theme.min.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('assets/layerslider/css/layerslider.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
