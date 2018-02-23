@@ -35,7 +35,7 @@
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "http://placehold.it/80x80" alt="recent">
+                                <img src= "https://placehold.it/80x80" alt="recent">
                                 <a href="#" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
@@ -51,7 +51,7 @@
                     <div class="media-object">
                         <div class="media-object-section">
                             <div class="recent-img">
-                                <img src= "http://placehold.it/80x80" alt="recent">
+                                <img src= "https://placehold.it/80x80" alt="recent">
                                 <a href="#" class="hover-posts">
                                     <span><i class="fa fa-play"></i></span>
                                 </a>
