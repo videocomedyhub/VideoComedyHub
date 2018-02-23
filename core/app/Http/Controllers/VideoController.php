@@ -35,34 +35,42 @@ class VideoController extends Controller {
     }
 
     public function watch($videoId) {
-        $data = [];
-        $data['video'] = $this->videoRepo->findByVideoId($videoId);
-        if (!($data['video'] instanceof Video)) {
-            return redirect('/');
+
+        $data = Cache::remember($videoId, 20, function () use ($videoId) {
+                    $data = [];
+                    $data['video'] = $this->videoRepo->findByVideoId($videoId);
+                    if (!($data['video'] instanceof Video)) {
+                        return redirect('/');
+                    }
+                    $data['tags'] = $data['video']->tags;
+                    $data['relatedVideos'] = $this->videoRepo->relatedVideos($data['video']);
+                    $data['nextVideos'] = $data['relatedVideos'];
+                    $data['comments'] = [];
+
+                    // adding ld+json structured data
+                    $e = [
+                        "@context" => "http://schema.org",
+                        "@type" => "VideoObject",
+                        "name" => $data['video']->title,
+                        "description" => $data['video']->description,
+                        "thumbnailUrl" => [
+                            $data['video']->default_thumbnail,
+                            $data['video']->medium_thumbnail,
+                            $data['video']->high_thumbnail,
+                        ],
+                        "uploadDate" => $data['video']->atom_time,
+                        "duration" => $data['video']->atom_duration,
+                        "embedUrl" => config('youtube.embed') . $data['video']->video_id,
+                        "interactionCount" => $data['video']->count
+                    ];
+                    $data['structured'] = json_encode($e);
+                    return $data;
+                });
+
+        if (array_key_exists('video', $data)) {
+            // event to notify video is being watched or opened
+            event(new VideoWatched($data['video']));
         }
-        $data['tags'] = $data['video']->tags;
-        $data['relatedVideos'] = $this->videoRepo->relatedVideos($data['video']);
-        $data['nextVideos'] = $data['relatedVideos'];
-        $data['comments'] = [];
-        // event to notify video is being watched or opened
-        event(new VideoWatched($data['video']));
-        // adding ld+json structured data
-        $e = [
-            "@context" => "http://schema.org",
-            "@type" => "VideoObject",
-            "name" => $data['video']->title,
-            "description" => $data['video']->description,
-            "thumbnailUrl" => [
-                $data['video']->default_thumbnail,
-                $data['video']->medium_thumbnail,
-                $data['video']->high_thumbnail,
-            ],
-            "uploadDate" => $data['video']->atom_time,
-            "duration" => $data['video']->atom_duration,
-            "embedUrl" => config('youtube.embed') . $data['video']->video_id,
-            "interactionCount" => $data['video']->count
-        ];
-        $data['structured'] = json_encode($e);
         return view('frontend.videos.watch', $data);
     }
 
