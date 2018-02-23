@@ -50,7 +50,7 @@ class IndexController extends Controller {
     }
 
     public function test() {
-        $video = \App\Entities\Video::find(1);
+        $video = $this->videoRepo->findBySlug('who-died-mark-angel-comedy-episode-147');
         $e = [
             "@context" => "http://schema.org",
             "@type" => "VideoObject",
@@ -66,7 +66,8 @@ class IndexController extends Controller {
             "embedUrl" => config('youtube.embed'). $video->video_id,
             "interactionCount" => $video->count
         ];
-        echo json_encode($e);
+//        echo json_encode($e);
+        echo json_encode($video);
     }
 
     public function testTime(VideoRepository $vid) {

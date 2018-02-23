@@ -58,3 +58,5 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
+//$diff =  microtime() - LARAVEL_START;
+//echo $diff;
