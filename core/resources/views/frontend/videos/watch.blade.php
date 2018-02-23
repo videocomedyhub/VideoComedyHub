@@ -124,9 +124,9 @@
                         </div>
                         <div class="tags">
                             <button><i class="fa fa-tags"></i>Tags</button>
-                            @foreach($video->tags as $tag)
+                          {{{--- @foreach($video->tags as $tag)
                             <a href="{{route('tags.single', ['slug' => $tag->slug])}}" class="inner-btn">{{$tag->name}}</a>
-                            @endforeach
+                            @endforeach ---}}
                         </div>
                     </div>
                 </div>

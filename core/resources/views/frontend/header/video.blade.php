@@ -19,7 +19,7 @@
     
     <meta name="description" content="{{ $video->seo_description }}">
     <!-- for Google (video) -->
-    <meta name="keywords" content="{{ TextHelper::tagToList($tags)}}">
+    <!-- <meta name="keywords" content=" TextHelper::tagToList($tags)"> -->
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{$video->title}}">

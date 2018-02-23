@@ -77,13 +77,13 @@ class VideoController extends Controller {
     public function single($slug) {
 
         $data = [];
-        $data['video'] = $this->videoRepo->findBySlug($slug);
+        $data['video'] = $this->videoRepo->findBySlug($slug,['channel']);
         if (!($data['video'] instanceof Video)) {
             var_dump($data['video']);
             die();
 //            return redirect('/');
         }
-        $data['tags'] = $data['video']->tags;
+//        $data['tags'] = $data['video']->tags;
         $data['relatedVideos'] = $this->videoRepo->relatedVideos($data['video']);
         $data['nextVideos'] = $data['relatedVideos'];
         $data['comments'] = [];
@@ -109,8 +109,6 @@ class VideoController extends Controller {
             // event to notify video is being watched or opened
             event(new VideoWatched($data['video']));
         }
-//        var_dump($data);
-//        die();
 
         return view('frontend.videos.item', $data);
     }

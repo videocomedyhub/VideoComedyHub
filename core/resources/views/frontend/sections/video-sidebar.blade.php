@@ -12,6 +12,6 @@
 
         @include('frontend.widgets.trending-videos')
         
-        @include('frontend.widgets.tags')
+        {{--- @include('frontend.widgets.tags') ---}}
     </div>
 </aside>
