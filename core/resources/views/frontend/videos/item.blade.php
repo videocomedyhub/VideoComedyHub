@@ -161,7 +161,7 @@
                 </div>
             </div>
         </section><!--end related posts-->
-        @include('frontend.sections.comments')
+        {{-- @include('frontend.sections.comments') --}}
     </div><!-- end left side content area -->
     <!-- sidebar -->
     <div class="large-4 columns">
