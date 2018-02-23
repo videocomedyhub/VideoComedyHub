@@ -45,6 +45,23 @@ class VideoController extends Controller {
         $data['comments'] = [];
         // event to notify video is being watched or opened
         event(new VideoWatched($data['video']));
+        // adding ld+json structured data
+        $e = [
+            "@context" => "http://schema.org",
+            "@type" => "VideoObject",
+            "name" => $data['video']->title,
+            "description" => $data['video']->description,
+            "thumbnailUrl" => [
+                $data['video']->default_thumbnail,
+                $data['video']->medium_thumbnail,
+                $data['video']->high_thumbnail,
+            ],
+            "uploadDate" => $data['video']->atom_time,
+            "duration" => $data['video']->atom_duration,
+            "embedUrl" => config('youtube.embed') . $data['video']->video_id,
+            "interactionCount" => $data['video']->count
+        ];
+        $data['structured'] = json_encode($e);
         return view('frontend.videos.watch', $data);
     }
 
@@ -61,7 +78,23 @@ class VideoController extends Controller {
         // event to notify video is being watched or opened
         event(new VideoWatched($data['video']));
 
-
+        // adding ld+json structured data
+        $e = [
+            "@context" => "http://schema.org",
+            "@type" => "VideoObject",
+            "name" => $data['video']->title,
+            "description" => $data['video']->description,
+            "thumbnailUrl" => [
+                $data['video']->default_thumbnail,
+                $data['video']->medium_thumbnail,
+                $data['video']->high_thumbnail,
+            ],
+            "uploadDate" => $data['video']->atom_time,
+            "duration" => $data['video']->atom_duration,
+            "embedUrl" => config('youtube.embed') . $data['video']->video_id,
+            "interactionCount" => $data['video']->count
+        ];
+        $data['structured'] = json_encode($e);
         return view('frontend.videos.item', $data);
     }
 

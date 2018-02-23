@@ -32,6 +32,8 @@
         <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
         @section('styles')
         @show
+        @section('stuctured')
+        @show
     </head>
     <body>
         <div class="off-canvas-wrapper">

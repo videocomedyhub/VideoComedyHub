@@ -43,7 +43,8 @@ class Video extends Model implements Transformable {
 
         static::addGlobalScope(new Scopes\ActiveScope());
     }
-        /**
+
+    /**
      * Return the sluggable configuration array for this model.
      *
      * @return array
@@ -55,21 +56,36 @@ class Video extends Model implements Transformable {
             ]
         ];
     }
-    
+
     public function getThumbnailAttribute() {
-        if($this->high_thumbnail) return $this->high_thumbnail;
-        if($this->medium_thumbnail) return $this->medium_thumbnail;
+        if ($this->high_thumbnail)
+            return $this->high_thumbnail;
+        if ($this->medium_thumbnail)
+            return $this->medium_thumbnail;
         return $this->default_thumbnail;
     }
-    
+
     public function getPrettyTimeAttribute() {
         $dt = new Carbon($this->published_at);
         return $dt->diffForHumans();
     }
+
     public function getAtomTimeAttribute() {
         $dt = new Carbon($this->published_at);
         return $dt->tz('UTC')->toAtomString();
     }
+
+    public function getAtomDurationAttribute() {
+        $d = explode(':', $this->duration);
+        $du = 'PT';
+        if (count($d) === 3) {
+            $du .= (int)array_shift($d) . 'H';
+        }
+        $du .= (int)array_shift($d) . 'M';
+        $du .= (int)array_shift($d) . 'S';
+        return $du;
+    }
+
     public function getSecondsAttribute() {
         return $this->duration;
     }

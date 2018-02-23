@@ -49,13 +49,24 @@ class IndexController extends Controller {
         return view('frontend.index.search')->with(compact('videos', 'query', 'count', 'title'));
     }
 
-    public function test(YouTubeHelper $helper) {
-        $headers = get_headers('http://www.youtube.com/oembed?url=https://youtu.be/LhZX6qHrbkQ');
-        if (!strpos($headers[0], '200')) {
-            echo "The YouTube video you entered does not exist";
-        }else{
-            echo 'Video Exists';
-        }
+    public function test() {
+        $video = \App\Entities\Video::find(1);
+        $e = [
+            "@context" => "http://schema.org",
+            "@type" => "VideoObject",
+            "name" => $video->title,
+            "description" => $video->description,
+            "thumbnailUrl" => [
+                $video->default_thumbnail,
+                $video->medium_thumbnail,
+                $video->high_thumbnail,
+            ],
+            "uploadDate" => $video->atom_time,
+            "duration" => $video->atom_duration,
+            "embedUrl" => config('youtube.embed'). $video->video_id,
+            "interactionCount" => $video->count
+        ];
+        echo json_encode($e);
     }
 
     public function testTime(VideoRepository $vid) {

@@ -1,8 +1,12 @@
 @extends('layouts.app')
 
 @section('styles')
-@parent
 <link rel="stylesheet" href="{{asset('assets/css/jquery.kyco.easyshare.css')}}">
+@endsection
+@section('stuctured')
+<script  type="application/ld+json">
+    {!!$structured !!}
+</script>
 @endsection
 
 @section('content')
