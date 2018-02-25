@@ -17,8 +17,6 @@
     <meta name="twitter:image" content="{{$channel->thumbnail}}">
 
     <meta name="description" content="{{ $channel->seo_description }}">
-    <!-- for Google (channel)-->
-    <meta name="keywords" content="{{ TextHelper::tagToList($tags)}}">
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{$channel->title}}">

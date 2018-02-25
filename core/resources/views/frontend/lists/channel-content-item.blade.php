@@ -13,10 +13,6 @@
                     <i class="fa fa-clock-o"></i>
                     <span>{{$ch->pretty_time}}</span>
                 </p>
-                <p class="pull-left">
-                    <i class="fa fa-play"></i>
-                    <span>{{$ch->videos()->count()}}</span>
-                </p>
             </div>
             <div class="post-summary">
                 <p>{{$ch->description}}</p>

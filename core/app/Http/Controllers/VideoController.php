@@ -42,7 +42,8 @@ class VideoController extends Controller {
                     if (!($data['video'] instanceof Video)) {
                         return redirect('/');
                     }
-                    $data['tags'] = $data['video']->tags;
+                    $data['vidTags'] = $this->videoRepo->tagsByVideo($data['video']);
+                    $data['vidCategories'] = $this->videoRepo->categoriesByVideo($data['video']);
                     $data['relatedVideos'] = $this->videoRepo->relatedVideos($data['video']);
                     $data['nextVideos'] = $data['relatedVideos'];
                     $data['comments'] = [];
@@ -77,13 +78,12 @@ class VideoController extends Controller {
     public function single($slug) {
 
         $data = [];
-        $data['video'] = $this->videoRepo->findBySlug($slug,['channel']);
+        $data['video'] = $this->videoRepo->findBySlug($slug, ['channel']);
         if (!($data['video'] instanceof Video)) {
-            var_dump($data['video']);
-            die();
-//            return redirect('/');
+            return redirect('/');
         }
-//        $data['tags'] = $data['video']->tags;
+        $data['vidTags'] = $this->videoRepo->tagsByVideo($data['video']);
+        $data['vidCategories'] = $this->videoRepo->categoriesByVideo($data['video']);
         $data['relatedVideos'] = $this->videoRepo->relatedVideos($data['video']);
         $data['nextVideos'] = $data['relatedVideos'];
         $data['comments'] = [];

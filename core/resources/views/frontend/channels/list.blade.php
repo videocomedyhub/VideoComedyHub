@@ -35,7 +35,6 @@
                 <div class="row secBg">
                     <div class="large-12 columns">
                         <div class="row column head-text clearfix">
-                            <p class="pull-left">All Channels : <span>{{$total}} Channels posted</span></p>
                             <div class="grid-system pull-right show-for-large">
                                 <a class="secondary-button grid-default" href="#"><i class="fa fa-th"></i></a>
                                 <a class="secondary-button current grid-medium" href="#"><i class="fa fa-th-large"></i></a>
@@ -45,7 +44,33 @@
                         <div class="tabs-content" data-tabs-content="newVideos">
                             <div class="tabs-panel is-active" id="new-all">
                                 <div class="row list-group">
-                                    @each('frontend.lists.channel-content-item', $channels, 'ch')
+                                    @foreach($channels as $ch)
+                                    <div class="item large-4 medium-6 columns grid-medium">
+                                        <div class="post thumb-border">
+                                            <div class="post-thumb">
+                                                <img class="ld" src="{{asset('assets/images/preload.png')}}"  data-original="{{$ch->thumbnail}}" alt="{{$ch->seo_title}}">
+                                                <a title="{{$ch->title}}" href="{{route('channels.single', ['slug' => $ch->slug])}}" class="hover-posts">
+                                                    <span><i class="fa fa-search"></i>View Channel</span>
+                                                </a>
+                                            </div>
+                                            <div class="post-des">
+                                                <h6><a title="{{$ch->title}}" href="{{route('channels.single', ['slug' => $ch->slug])}}">{{$ch->title}}</a></h6>
+                                                <div class="post-stats clearfix">
+                                                    <p class="pull-left">
+                                                        <i class="fa fa-clock-o"></i>
+                                                        <span>{{$ch->pretty_time}}</span>
+                                                    </p>
+                                                </div>
+                                                <div class="post-summary">
+                                                    <p>{{$ch->description}}</p>
+                                                </div>
+                                                <div class="post-button">
+                                                    <a title="{{$ch->title}}" href="{{route('channels.single', ['slug' => $ch->slug])}}" class="secondary-button"><i class="fa fa-search"></i>Watch {{$ch->title}} Videos</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>

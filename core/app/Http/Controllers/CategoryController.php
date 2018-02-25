@@ -27,8 +27,7 @@ class CategoryController extends Controller {
          */
         $data = [];
         $data['category'] = $this->categoryRepo->findBySlug($slug);
-        $data['videos'] = $data['category']->videos()->paginate(20);
-        $data['tags'] = $data['category']->tags;
+        $data['videos'] = $this->categoryRepo->videosByCategory($data['category']);
         return view('frontend.categories.item', $data);
     }
 

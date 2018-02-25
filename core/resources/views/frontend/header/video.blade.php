@@ -16,10 +16,10 @@
     <meta name="twitter:description" content="{{ $video->seo_description }}">
     <meta name="twitter:image" content="{{$video->thumbnail}}">
     <link rel="canonical" href="{{route('videos.single',['slug' => $video->slug])}}">
-    
+
     <meta name="description" content="{{ $video->seo_description }}">
     <!-- for Google (video) -->
-    <!-- <meta name="keywords" content=" TextHelper::tagToList($tags)"> -->
+    <meta name="keywords" content=" {{TextHelper::tagToList($vidTags)}}">
 
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{{$video->title}}">

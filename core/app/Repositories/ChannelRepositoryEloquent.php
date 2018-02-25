@@ -7,6 +7,7 @@ use Prettus\Repository\Criteria\RequestCriteria;
 use App\Repositories\ChannelRepository;
 use App\Entities\Channel;
 use App\Validators\ChannelValidator;
+use Cache;
 
 /**
  * Class ChannelRepositoryEloquent
@@ -35,12 +36,17 @@ class ChannelRepositoryEloquent extends BaseRepository implements ChannelReposit
     public function findByChannelId($channelId) {
         return $this->with(['videos', 'tags'])->model->where('channel_id', $channelId)->first();
     }
+
     public function existsByChannelId($channelId) {
         return $this->model->where('channel_id', $channelId)->first();
     }
 
     public function findBySlug($slug) {
-        return $this->with(['videos', 'tags'])->model->where('slug', '=', $slug)->first();
+        $that = $this;
+        $channel = Cache::remember('channel_' . $slug, 1500, function() use($slug, $that) {
+                    return $that->model->where('slug', '=', $slug)->first();
+                });
+        return $channel;
     }
 
     public function firstMap() {
@@ -48,9 +54,12 @@ class ChannelRepositoryEloquent extends BaseRepository implements ChannelReposit
     }
 
     public function videosByChannel(Channel $channel) {
+        $page = empty(request()->input('page')) ? 1 : request()->input('page');
         $perPage = config('video.paginate', 40);
-        $v = $channel->videos()->with(['channel'])->orderBy('published_at', 'desc');
-        return $v->paginate($perPage);
+        $videos = Cache::remember($channel->slug . '_videos_page_' . $page, 1500, function() use ($channel, $perPage) {
+                    return $channel->videos()->orderBy('published_at', 'desc')->paginate($perPage);
+                });
+        return $videos;
     }
 
     public function getAllAdmin() {

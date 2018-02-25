@@ -7,6 +7,7 @@ use Prettus\Repository\Criteria\RequestCriteria;
 use App\Repositories\CategoryRepository;
 use App\Entities\Category;
 use App\Validators\CategoryValidator;
+use Cache;
 
 /**
  * Class CategoryRepositoryEloquent
@@ -37,10 +38,12 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
     }
 
     public function videosByCategory(Category $category) {
-        $c = $category->channels();
-        $v = $c->videos->orderBy('published_at', 'desc');
-//        $v = $category->videos()->with(['channel'])->orderBy('published_at','desc');
-        return $v->paginate($this->perPage);
+        $page = empty(request()->input('page')) ? 1 : request()->input('page');
+        $perPage = config('video.paginate', $this->perPage);
+        $videos = Cache::remember($category->slug . '_videos_page_' . $page, 1500, function() use ($category, $perPage) {
+                    return $category->videos()->with('channel:id,title,slug')->orderBy('published_at', 'desc')->paginate($perPage);
+                });
+        return $videos;
     }
 
     public function featured($count = null) {
@@ -50,11 +53,20 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
     }
 
     public function widgetList() {
-        return  $this->model->whereHas('channels.videos')->get();
+        $that = $this;
+        $categories = Cache::remember('categories_widget', 1500, function()use($that){
+        return  $that->model->take(10)->get(['id','title', 'slug']);
+            
+        });
+        return $categories;
     }
 
     public function findBySlug($slug) {
-        return $this->with(['tags', 'videos', 'channels'])->model->where('slug', '=', $slug)->first();
+        $that = $this;
+        $category = Cache::remember('category_' . $slug, 1500, function() use($slug, $that) {
+                    return $that->model->where('slug', '=', $slug)->first();
+                });
+        return $category;
     }
 
     public function getAllAdmin() {

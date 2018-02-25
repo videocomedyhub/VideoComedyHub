@@ -60,7 +60,7 @@
     <script src="{{asset('assets/bower_components/foundation-sites/dist/foundation.min.js')}}"></script>
     <script defer src="{{asset('assets/bower_components/what-input/what-input.min.js')}}"></script>
     <script defer src="{{asset('assets/js/min/jquery.showmore.src-min.js')}}" type="text/javascript"></script>
-    <script async src="{{asset('assets/js/min/app-min.js')}}"></script>
+    <script defer src="{{asset('assets/js/min/app-min.js')}}"></script>
     <!-- LayerSlider script files
     <script src="{{asset('assets/layerslider/js/greensock.js')}}" type="text/javascript"></script>
     <script src="{{asset('assets/layerslider/js/layerslider.transitions.js')}}" type="text/javascript"></script>

@@ -35,7 +35,6 @@
                 <div class="row secBg">
                     <div class="large-12 columns">
                         <div class="row column head-text clearfix">
-                            <p class="pull-left">All Videos : <span>{{$category->videos()->count()}} Videos in {{$category->title}}</span></p>
                             <div class="grid-system pull-right show-for-large">
                                 <a class="secondary-button grid-default" href="#"><i class="fa fa-th"></i></a>
                                 <a class="secondary-button current grid-medium" href="#"><i class="fa fa-th-large"></i></a>

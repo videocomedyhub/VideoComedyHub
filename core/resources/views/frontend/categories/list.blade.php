@@ -33,7 +33,6 @@
                 <div class="row secBg">
                     <div class="large-12 columns">
                         <div class="row column head-text clearfix">
-                            <p class="pull-left">All Categories : <span>{{$total}} Categories posted</span></p>
                             <div class="grid-system pull-right show-for-large">
                                 <a class="secondary-button grid-default" href="#"><i class="fa fa-th"></i></a>
                                 <a class="secondary-button current grid-medium" href="#"><i class="fa fa-th-large"></i></a>
@@ -43,7 +42,33 @@
                         <div class="tabs-content" data-tabs-content="newVideos">
                             <div class="tabs-panel is-active" id="new-all">
                                 <div class="row list-group">
-                                    @each('frontend.lists.category-content-item', $categories, 'cat')
+                                    @foreach($categories as $cat)
+                                    <div class="item large-4 medium-6 columns grid-medium">
+                                        <div class="post thumb-border">
+                                            <div class="post-thumb">
+                                                <img class="ld" src="{{asset('assets/images/preload.png')}}"  data-original="{{asset('uploads/categories/' . $cat->image)}}" alt="{{$cat->seo_title}}">
+                                                <a title="{{$cat->title}}" href="{{route('categories.single', ['slug' => $cat->slug])}}" class="hover-posts">
+                                                    <span><i class="fa fa-search"></i>View Category</span>
+                                                </a>
+                                            </div>
+                                            <div class="post-des">
+                                                <h6><a title="{{$cat->title}}" href="{{route('categories.single', ['slug' => $cat->slug])}}">{{$cat->title}}</a></h6>
+                                                <div class="post-stats clearfix">
+                                                    <p class="pull-left">
+                                                        <i class="fa fa-clock-o"></i>
+                                                        <span>{{$cat->pretty_time}}</span>
+                                                    </p>
+                                                </div>
+                                                <div class="post-summary">
+                                                    <p>{{$cat->description}}</p>
+                                                </div>
+                                                <div class="post-button">
+                                                    <a title="{{$cat->title}}" href="{{route('categories.single', ['slug' => $cat->slug])}}" class="secondary-button"><i class="fa fa-search"></i>View videos in {{$cat->title}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>

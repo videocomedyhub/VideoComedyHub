@@ -35,6 +35,7 @@ class IndexController extends Controller {
         $newVideos = $this->videoRepo->newVideos(20);
         $popularVideos = $this->videoRepo->popularVideos(20);
         $featuredCategories = $this->categoryRepo->featured(15);
+//        $videoCount = $this->videoRepo->totalVideos();
         return view('frontend.index.index', compact('featuredVideos', 'featuredCategories', 'newVideos', 'popularVideos'));
     }
 
@@ -67,7 +68,7 @@ class IndexController extends Controller {
             "interactionCount" => $video->count
         ];
 //        echo json_encode($e);
-        echo json_encode($video);
+        return view('welcome');
     }
 
     public function testTime(VideoRepository $vid) {

@@ -14,6 +14,7 @@ use App\Repositories\SettingRepository;
 class SettingComposer {
 
     protected $settingsRepo;
+    protected $links;
 
     public function __construct(SettingRepository $settings) {
         $this->settingsRepo = $settings;
@@ -26,13 +27,11 @@ class SettingComposer {
      * @return void
      */
     public function compose(View $view) {
-        
-        $social = $this->settingsRepo->findByField('group', 'social-link', ['key', 'value']);
-        $links = [];
-        foreach ($social as $s) {
-            $links[$s->key] = $s->value;
+
+        if (!$this->links) {
+            $links = $this->settingsRepo->getSocialLinks();
         }
-        $view->with('socials', $links);
+        return $view->with('socials', $links);
     }
 
 }

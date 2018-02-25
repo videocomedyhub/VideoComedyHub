@@ -44,7 +44,7 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         $count = (empty($count)) ? config('video.count', 40) : $count;
         $that = $this;
         $videos = Cache::remember('featured_videos_' . $page, 1500, function() use ($count, $that) {
-                    $that->orderBy('published_at', 'desc')->model->where('featured', 1);
+                    $that->orderBy('published_at', 'desc')->model->where('featured', 1)->with('channel:id,title,slug');
                     return $that->paginate($count);
                 });
         return $videos;
@@ -55,7 +55,7 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         $count = (empty($count)) ? config('video.count', 40) : $count;
         $that = $this;
         $videos = Cache::remember('new_videos_' . $page, 1500, function() use($count, $that) {
-                    return $that->orderBy('published_at', 'desc')->paginate($count);
+                    return $that->orderBy('published_at', 'desc')->with('channel:id,title,slug')->paginate($count);
                 });
         return $videos;
     }
@@ -63,15 +63,17 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
     public function findByVideoId($videoId, array $with = ['channel', 'tags']) {
         $that = $this;
         $video = Cache::remember($videoId, 1500, function()use ($videoId, $with, $that) {
-                    return $that->with($with)->model->where('video_id', '=', $videoId)->first();
+                    $that->with($with)->model->where('video_id', '=', $videoId);
+                    return $that->first();
                 });
         return $video;
     }
 
-    public function findBySlug($slug, array $with = ['channel', 'tags']) {
+    public function findBySlug($slug, array $with = ['channel:id,title,slug', 'tags']) {
         $that = $this;
         $video = Cache::remember('video_' . $slug, 1500, function() use($slug, $with, $that) {
-                    return $that->with($with)->model->where('slug', '=', $slug)->first();
+                    $that->with($with)->model->where('slug', '=', $slug);
+                    return $that->first();
                 });
         return $video;
     }
@@ -81,7 +83,7 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         $count = empty($count) ? config('video.count', 40) : $count;
         $that = $this;
         $videos = Cache::remember('popular_videos_' . $page, 1500, function()use ($count, $that) {
-                    return $that->orderBy('count', 'desc')->paginate($count);
+                    return $that->orderBy('count', 'desc')->with('channel:id,title,slug')->paginate($count);
                 });
         return $videos;
     }
@@ -90,14 +92,31 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
         
     }
 
+    public function categoriesByVideo(Video $video) {
+        $categories = Cache::remember($video->slug . 'categories', 1500, function() use ($video) {
+                    return $video->categories;
+                });
+        return $categories;
+    }
+
+    public function tagsByVideo(Video $video) {
+        $tags = Cache::remember($video->slug . 'tags', 1500, function() use ($video) {
+                    return $video->tags;
+                });
+        return $tags;
+    }
+
     public function relatedVideos(Video $video) {
         $count = config('video.related', 5);
         $that = $this;
         $videos = Cache::remember('related_video_' . $video->slug, 1500, function() use($video, $count, $that) {
-            return $that->model->whereHas('channel', function($q)use ($video) {
+                   $videos = $that->model->whereHas('channel', function($q)use ($video) {
                         $q->where('id', '=', $video->channel->id);
-                    })->where('id', '!=', $video->id)->take($count)->get();
-        });
+                    })->where('id', '!=', $video->id)->with('channel:id,title,slug')->take($count)->get();
+                    
+                    $that->resetModel();
+                    return $videos;
+                });
         return $videos;
     }
 

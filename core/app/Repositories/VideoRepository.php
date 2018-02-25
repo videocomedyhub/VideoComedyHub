@@ -40,4 +40,7 @@ interface VideoRepository extends RepositoryInterface {
     public function addTagsToVideo(Video $video, array $tags);
 
     public function existsByVideoId($videoId);
+    
+    public function categoriesByVideo(Video $video);
+    public function tagsByVideo(Video $video);
 }

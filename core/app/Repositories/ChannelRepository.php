@@ -15,7 +15,7 @@ interface ChannelRepository extends RepositoryInterface {
     public function findByChannelId($channelId);
 
     public function findBySlug($slug);
-
+    
     public function firstMap();
 
     public function videosByChannel(\App\Entities\Channel $category);

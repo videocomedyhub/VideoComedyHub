@@ -7,7 +7,7 @@
         <div class="widgetContent clearfix">
             <ul>
                 @foreach($cats as $category)
-                <li class="cat-item"><a title="{{$category->title}}" href="{{route('categories.single', ['slug' => $category->slug])}}">{{$category->title}} &nbsp; ({{$category->videos()->count()}})</a></li>
+                <li class="cat-item"><a title="{{$category->title}}" href="{{route('categories.single', ['slug' => $category->slug])}}">{{$category->title}}</a></li>
                 @endforeach
             </ul>
         </div>

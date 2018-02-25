@@ -17,15 +17,15 @@ class ChannelController extends Controller
     {
         $data = [];
         $data['channels'] = $this->channelRepo->paginate(20);
-        $data['total'] = Channel::count();
+        //$data['total'] = Channel::count();
        return view('frontend.channels.list', $data);
     }
     
     public function single($slug) {
+        
         $data = [];
         $data['channel'] = $this->channelRepo->findBySlug($slug);
-        $data['videos'] = $data['channel']->videos()->orderByDesc('published_at')->paginate(40);
-        $data['tags'] = $data['channel']->tags;
+        $data['videos'] = $this->channelRepo->videosByChannel($data['channel']);
         return view('frontend.channels.item', $data);
     }
     

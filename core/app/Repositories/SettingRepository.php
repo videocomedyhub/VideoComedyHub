@@ -11,4 +11,5 @@ use Prettus\Repository\Contracts\RepositoryInterface;
 interface SettingRepository extends RepositoryInterface
 {
     public function getYouTubeApi();
+    public function getSocialLinks();
 }

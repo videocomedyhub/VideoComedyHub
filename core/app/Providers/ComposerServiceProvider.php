@@ -15,7 +15,7 @@ class ComposerServiceProvider extends ServiceProvider {
      */
     public function boot() {
         View::composer(
-                'frontend.*', \App\Http\ViewComposers\SettingComposer::class
+                'layouts.app', \App\Http\ViewComposers\SettingComposer::class
         );
         View::composer(
                 [
@@ -32,7 +32,7 @@ class ComposerServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        //
+      //  $this->app->singleton(\App\Http\ViewComposers\SettingComposer::class);
     }
 
 }

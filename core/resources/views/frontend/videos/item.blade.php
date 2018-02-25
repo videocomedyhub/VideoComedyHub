@@ -123,13 +123,13 @@
 
                         <div class="categories">
                             <button><i class="fa fa-folder"></i>Categories</button>
-                            @foreach($video->categories as $cat)
+                            @foreach($vidCategories as $cat)
                             <a href="{{route('categories.single', ['slug' => $cat->slug])}}" class="inner-btn">{{$cat->title}}</a>
                             @endforeach
                         </div>
                         <div class="tags">
                             <button><i class="fa fa-tags"></i>Tags</button>
-                            @foreach($video->tags as $tag)
+                            @foreach($vidTags as $tag)
                             <a href="{{route('tags.single', ['slug' => $tag->slug])}}" class="inner-btn">{{$tag->name}}</a>
                             @endforeach
                         </div>

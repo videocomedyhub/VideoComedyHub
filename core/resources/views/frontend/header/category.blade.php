@@ -14,8 +14,6 @@
     <meta name="twitter:title" content="{{$category->title}}">
     <meta name="twitter:description" content="{{ $category->seo_description }}">
     <meta name="twitter:image" content="{{$category->image}}">
-    <!-- for Google -->
-    <meta name="keywords" content="{{ TextHelper::tagToList($tags)}}">
 
     <meta name="description" content="{{ $category->seo_description }}">
     <!-- Schema.org markup for Google+ -->
