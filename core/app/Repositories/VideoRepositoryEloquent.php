@@ -113,7 +113,6 @@ class VideoRepositoryEloquent extends BaseRepository implements VideoRepository 
                    $videos = $that->model->whereHas('channel', function($q)use ($video) {
                         $q->where('id', '=', $video->channel->id);
                     })->where('id', '!=', $video->id)->with('channel:id,title,slug')->take($count)->get();
-                    
                     $that->resetModel();
                     return $videos;
                 });

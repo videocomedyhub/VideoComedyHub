@@ -20,7 +20,7 @@
                         <div class="medium-8 small-8 columns">
                             <div class="head-title">
                                 <i class="fa fa-film"></i>
-                                <h4>Comedy Categories</h4>
+                                <h4>Categories</h4>
                             </div>
                         </div>
                         <div class="medium-4 small-4 columns">

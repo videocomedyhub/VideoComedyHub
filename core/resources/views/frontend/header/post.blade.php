@@ -11,6 +11,8 @@
     <meta itemprop="image" content="{{$post->image}}">
 
     <!-- for Facebook -->          
+    <meta property="fb:app_id" content="{{config('facebook.app_id')}}">
+    <meta property="og:site_name" content="{{config('app.name')}}">
     <meta property="og:title" content="{{$post->title}}">
     <meta property="og:type" content="article">
     <meta property="og:image" content="{{$post->image}}">

@@ -47,17 +47,20 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
     }
 
     public function featured($count = null) {
+        $that = $this;
         $count = (empty($count)) ? config('video.count', 40) : $count;
-        $this->orderBy('created_at', 'desc')->model->where('featured', 1);
-        return $this->paginate($count);
+        $categories = Cache::remember('categories_featured', 1500, function()use ($count, $that) {
+                    $that->orderBy('created_at', 'desc')->model->where('featured', 1);
+                    return $that->paginate($count);
+                });
+        return $categories;
     }
 
     public function widgetList() {
         $that = $this;
-        $categories = Cache::remember('categories_widget', 1500, function()use($that){
-        return  $that->model->take(10)->get(['id','title', 'slug']);
-            
-        });
+        $categories = Cache::remember('categories_widget', 1500, function()use($that) {
+                    return $that->model->take(10)->get(['id', 'title', 'slug']);
+                });
         return $categories;
     }
 

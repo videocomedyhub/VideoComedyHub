@@ -85,6 +85,16 @@ class Video extends Model implements Transformable {
         $du .= (int)array_shift($d) . 'S';
         return $du;
     }
+    public function getDurationSecondsAttribute() {
+        $d = explode(':', $this->duration);
+        $du = 1;
+        if (count($d) === 3) {
+            $du += (array_shift($d) * 60 * 60);
+        }
+        $du += (array_shift($d) * 60);
+        $du += array_shift($d);
+        return $du;
+    }
 
     public function getSecondsAttribute() {
         return $this->duration;

@@ -1,10 +1,11 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <title>{{$tag->name}}</title>
-    <!-- for Facebook -->          
+    <!-- for Facebook --> 
+    <meta property="fb:app_id" content="{{config('facebook.app_id')}}">
     <meta property="og:title" content="{{$tag->name}}">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="{{route('index')}}">
+    <meta property="og:site_name" content="{{config('app.name')}}">
     <meta property="og:image" content="{{str_replace('https','http',$tag->thumbnail)}}">
     <meta property="og:image:secure_url" content="{{$tag->thumbnail}}">
     <meta property="og:url" content="{{route('tags.single',['slug' => $tag->slug])}}">
