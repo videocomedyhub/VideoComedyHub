@@ -7,16 +7,7 @@
         <li class="has-submenu">
             <a href="#"><i class="fa fa-home"></i>Home</a>
             <ul class="submenu menu vertical" data-submenu data-animate="slide-in-down slide-out-up">
-                <li><a href="index.html"><i class="fa fa-home"></i>Home page v1</a></li>
-                <li><a href="home-v2.html"><i class="fa fa-home"></i>Home page v2</a></li>
-                <li><a href="home-v3.html"><i class="fa fa-home"></i>Home page v3</a></li>
-                <li><a href="home-v4.html"><i class="fa fa-home"></i>Home page v4</a></li>
-                <li><a href="home-v5.html"><i class="fa fa-home"></i>Home page v5</a></li>
-                <li><a href="home-v6.html"><i class="fa fa-home"></i>Home page v6</a></li>
-                <li><a href="home-v7.html"><i class="fa fa-home"></i>Home page v7</a></li>
-                <li><a href="home-v8.html"><i class="fa fa-home"></i>Home page v8</a></li>
-                <li><a href="home-v9.html"><i class="fa fa-home"></i>Home page v9</a></li>
-                <li><a href="home-v10.html"><i class="fa fa-home"></i>Home page v10</a></li>
+                <li><a href="{{route('index')}}"><i class="fa fa-home"></i>Home page v1</a></li>
             </ul>
         </li>
         <li class="has-submenu" data-dropdown-menu="example1">
