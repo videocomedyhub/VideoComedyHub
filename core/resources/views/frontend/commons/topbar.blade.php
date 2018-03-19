@@ -14,7 +14,7 @@
             <div class="top-button">
                 <ul class="menu float-right">
                     <li>
-                        <a href="submit-post.html">upload Video</a>
+                        <a href="#">upload Video</a>
                     </li>
 
                     @guest
